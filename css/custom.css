@@ -1,5 +1,5 @@
 .cover{
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/background-home.jpg');
     background-size: cover;
     display: none;
 }
@@ -8,7 +8,7 @@
   }
 .hero{
     min-height: 600px;
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/background-home.jpg');
     background-size: cover;
     background-position: right bottom;
 }
