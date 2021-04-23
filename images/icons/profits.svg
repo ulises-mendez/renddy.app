@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#808080;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#6ACE9C;stroke-miterlimit:10;}
+</style>
+<g>
+	<polyline class="st0" points="15.35,36.83 26.78,17.17 18.76,12.54 46.13,2.18 50.87,31.06 42.93,26.48 40.1,31.38 	"/>
+	<line class="st0" x1="7.88" y1="49.91" x2="9.79" y2="46.94"/>
+	<line class="st0" x1="13.29" y1="40.88" x2="13.94" y2="39.74"/>
+	<line class="st0" x1="28.62" y1="51.29" x2="25.17" y2="57.26"/>
+	<g>
+		
+			<ellipse transform="matrix(0.9869 -0.1613 0.1613 0.9869 -6.5682 6.9198)" class="st1" cx="39.33" cy="43.91" rx="3.02" ry="3.03"/>
+		
+			<ellipse transform="matrix(0.9869 -0.1613 0.1613 0.9869 -5.6223 5.2282)" class="st1" cx="29.39" cy="37.24" rx="3.02" ry="3.03"/>
+		<line class="st1" x1="38.32" y1="33.93" x2="30.41" y2="48.44"/>
+	</g>
+</g>
+</svg>
