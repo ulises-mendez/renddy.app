@@ -1,5 +1,5 @@
 .cover{
-    background-image: url('images/hero-background.jpg');
+    background-image: url('../images/hero-background.jpg');
     background-size: cover;
     display: none;
 }
@@ -8,7 +8,7 @@
   }
 .hero{
     min-height: 600px;
-    background-image: url('images/hero-background.jpg');
+    background-image: url('../images/hero-background.jpg');
     background-size: cover;
     background-position: right bottom;
 }
@@ -17,13 +17,13 @@
 }
 .hero-loan{
   min-height: 600px;
-  background-image: url('/images/background.jpg');
+  background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: left center;
 }
 .hero-investor{
   min-height: 600px;
-  background-image: url('/images/background-investment.jpg');
+  background-image: url('../images/background-investment.jpg');
   background-size: cover;
   background-position: right bottom;
 }
