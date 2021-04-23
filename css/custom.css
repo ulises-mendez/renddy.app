@@ -1,5 +1,5 @@
 .cover{
-    background-image: url('https://raw.githubusercontent.com/ulises-mendez/renddy.app/main/images/hero-background.jpg');
+    background-image: url('images/hero-background.jpg');
     background-size: cover;
     display: none;
 }
