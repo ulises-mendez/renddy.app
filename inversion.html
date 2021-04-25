@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family:'Karla',sans-serif;        }
+    </style>
+    <!-- Normalize.css conflicts
+
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+    </style>
+    -->
+
+    <title>Invertir en préstamos | mensapi.com</title>
+</head>
+<body>
+    <nav class="flex items-center justify-between justify-items-stretch flex-wrap bg-teal-500 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/">
+        <svg viewBox="0 0 900 335.6" xmlns="http://www.w3.org/2000/svg" width="125px">
+        <style type="text/css">
+            .st0{fill:url(#SVGID_1_);}
+        </style>
+        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.1474" y1="167.4969" x2="897.8525" y2="167.4969">
+            <stop  offset="0" style="stop-color:#006EFF"/>
+            <stop  offset="1" style="stop-color:#00F0AB"/>
+        </linearGradient>
+        <path class="st0" d="M239.6,84.5c3.9,34.3-16.4,71.5-62.5,88.8l30.7,92.4h-63.2c-14.1,0-26.5-9.6-29.9-23.4l-16.2-68
+            c0,0-31.8,9.5-27.9,89.9c0,0.8-0.5,1.5-1.3,1.5H12.4c-5,0-9.3-3.7-9.7-8.5c-7.6-103.4,62.1-142,99.2-151.1c0.3-0.1,0.5,0.2,0.5,0.4
+            L99,123.6c-0.1,0.6,0.4,1,1,0.8c9.9-4.1,77.9-31.9,90.6-37.1c0.7-0.3,0.7-1.3-0.1-1.5c-11.8-3.8-70.6-22.8-77.9-25.2
+            c-0.4-0.1-0.8,0.1-0.9,0.5l-2.9,13.7c-0.1,0.7-0.8,1.2-1.5,1.2c-41.7,1.6-77,20.4-84.5,24.5c-0.6,0.3-1.2-0.2-1.1-0.8l16.9-84.2
+            c0.4-2.2,2.5-3.8,4.8-3.8h100.7C205.5,11.7,235.2,46.3,239.6,84.5z M265.8,150.3c-11.5,9.7-19.9,24.7-25.1,45.1
+            c-2.3,9.1-3.4,17.4-3.4,25c0,6.8,1,13.1,2.9,19c1.9,5.9,5.1,11,9.5,15.3c4.4,4.3,10.1,7.7,17.2,10.2c7.1,2.5,15.7,3.8,25.9,3.8
+            c8.6,0,16-0.8,22.4-2.4c6.4-1.6,12.4-3.6,18.1-5.8l9-31.7c-6.1,2.3-12.3,4.2-18.4,5.7c-6.1,1.5-13.2,2.3-21.1,2.3
+            c-3.2,0-6.2-0.2-8.8-0.6c-2.7-0.4-5-1.3-6.9-2.8c-1.9-1.5-3.4-3.5-4.5-6.2c-1.1-2.7-1.6-6.3-1.6-10.8l22.8-1
+            c7.9-0.3,15.1-1.4,21.7-3.1c6.5-1.8,12.1-4.4,16.7-8c4.6-3.5,8.2-7.9,10.8-13.2c2.6-5.2,3.9-11.5,3.9-18.8
+            c0-24.2-15.2-36.3-45.5-36.3C292.5,135.8,277.4,140.6,265.8,150.3z M315,169.2c1.7,1.6,2.5,4.1,2.5,7.5c0,4.7-1.4,8-4.2,10.1
+            c-2.8,2-7.3,3.2-13.5,3.5l-15.3,0.5c2.4-9.2,5.4-15.5,9-18.9c3.6-3.4,7.9-5.1,13.1-5.1C310.5,166.8,313.3,167.6,315,169.2z
+             M397.3,265.6l14.3-73.7c0.5-2.9,1.2-5.7,2.2-8.2s2.2-4.9,3.8-7c1.5-2.1,3.3-3.8,5.4-5c2.1-1.2,4.6-1.8,7.5-1.8c3.7,0,6.3,1,7.8,2.9
+            c1.5,1.9,2.2,4.6,2.2,8c0,2.3-0.2,4.8-0.7,7.8l-14.8,77h43.9l16-81.9c1-4.8,1.5-9.5,1.5-14.1c0-5-0.6-9.6-1.9-13.7
+            c-1.3-4.1-3.3-7.7-6.1-10.7s-6.3-5.3-10.5-7c-4.3-1.7-9.4-2.5-15.4-2.5c-8.7,0-16.1,1.7-22,5.2c-6,3.5-11.1,7.9-15.3,13.2l0.7-15.5
+            h-37.6l-24.7,126.9H397.3z M601.9,265.6l35.4-180h-44.1L583,137.2c-4.8-1-9.9-1.5-15-1.5c-9.1,0-17.4,1.3-25.2,4
+            c-7.8,2.7-14.7,6.5-21,11.5c-6.2,5-11.5,11.1-15.9,18.3c-4.4,7.2-7.6,15.2-9.7,24.1c-2.4,9.7-3.6,19.2-3.6,28.6
+            c0,6.5,0.6,12.5,1.9,18.2c1.3,5.7,3.4,10.5,6.3,14.7c2.9,4.1,6.7,7.4,11.5,9.8c4.8,2.4,10.6,3.6,17.6,3.6c7.4,0,13.9-1.6,19.5-4.7
+            c5.6-3.2,10.7-7.9,15.4-14.2l-0.5,16H601.9z M568.7,210.4c-1.6,7.9-4,14-7.3,18.3c-3.2,4.3-7.4,6.4-12.6,6.4c-3.9,0-6.9-1.1-9.1-3.4
+            c-2.2-2.3-3.3-6.2-3.3-11.9c0-2.7,0.2-5.9,0.7-9.3c0.5-3.5,1.4-7.5,2.7-12c3.1-11.3,7-19.1,11.7-23.3c4.8-4.2,10.1-6.3,15.9-6.3
+            c2.6,0,5.7,0.4,9.2,1.2L568.7,210.4z M736.3,265.6l35.4-180h-44.1l-10.2,51.6c-4.8-1-9.9-1.5-15-1.5c-9.1,0-17.5,1.3-25.2,4
+            c-7.8,2.7-14.7,6.5-21,11.5c-6.2,5-11.5,11.1-15.9,18.3c-4.4,7.2-7.6,15.2-9.7,24.1c-2.4,9.7-3.6,19.2-3.6,28.6
+            c0,6.5,0.6,12.5,1.9,18.2c1.3,5.7,3.4,10.5,6.3,14.7c2.9,4.1,6.7,7.4,11.5,9.8c4.8,2.4,10.6,3.6,17.6,3.6c7.4,0,13.9-1.6,19.5-4.7
+            c5.6-3.2,10.7-7.9,15.4-14.2l-0.5,16H736.3z M703.1,210.4c-1.6,7.9-4,14-7.3,18.3c-3.2,4.3-7.4,6.4-12.6,6.4c-3.9,0-6.9-1.1-9.1-3.4
+            c-2.2-2.3-3.3-6.2-3.3-11.9c0-2.7,0.2-5.9,0.7-9.3c0.5-3.5,1.4-7.5,2.7-12c3.1-11.3,7-19.1,11.7-23.3s10.1-6.3,15.9-6.3
+            c2.6,0,5.7,0.4,9.2,1.2L703.1,210.4z M788.3,263.7l-3.4,7.5c-3.1,6.5-6.5,11.2-10.2,14.2s-9.2,4.5-16.5,4.5c-3.2,0-6.2-0.2-9-0.7
+            c-2.7-0.5-5.2-1.1-7.5-1.7l-10.2,30.5c4.2,1.5,8.6,2.7,13.1,3.8c4.5,1.1,10.3,1.6,17.5,1.6c6.6,0,12.7-0.6,18.3-1.8
+            c5.6-1.2,10.8-3.4,15.6-6.5c4.8-3.2,9.5-7.4,13.9-12.8c4.4-5.4,8.8-12.3,13.2-20.7l74.6-142.7h-47.7l-32.5,82.6l-2.2-82.6h-48.7
+            L788.3,263.7z"/>
+        </svg>      </a>
+    </div>
+    <div class="block lg:hidden ">
+      <button @click="toggleNav" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-green-400 hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+    </div>
+    <div class="flex justify-end ">
+      <div class="mx-auto text-sm">
+        <a href="solicitar-prestamo.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+        Quiero un préstamo
+      </a>
+      </div>
+      <div class="mx-auto text-sm ">
+        <a href="inversion.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+        Quiero invertir
+        </a>
+      </div>
+      
+                  <div class="mx-auto text-sm">
+          <a href="http://localhost/login" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+            Iniciar sesión
+          </a>
+      </div>
+                <div class="mx-auto text-sm">
+              <a href="http://localhost/register" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">Registrarme</a>
+      </div>
+                    </div>
+</nav>
+    <div class="hero-investor" style="height: 100%">
+    <div class="container m-auto flex  items-end" style="height: 520px">
+
+        <div class="w-full mt-20 ">
+          <h1 class="text-3xl font-bold text-green-500  my-6 ">Invierte en préstamos seguros</h1>
+          <p class="text-lg">Gana buenos rendimientos prestándole a personas con buen historial crediticio y capacidad de pago comprobada. ¡Simula tu inversión!</p>
+          <div class="w-2/3 bg-white border-green-500  rounded my-6">
+          <div class="w-full flex flex-grow">
+            
+            <div class="w-full p-4">
+                <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="email">¿Cuánto deseas invertir?</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                 <span id="exchange" class="text-gray-500 sm:text-sm">
+                    $
+                </span>
+                </div>
+                <input type="number" name="amount" id="amount"  min="10000"  max="500000" step="500" pattern="([0-9]+.{0,1}[0-9]*,{0,1})*[0-9]" class="appearance-none block w-full pl-7 bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60" placeholder="0.00">
+                
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                <label for="currency" class="sr-only">Currency</label>
+                <select id="currency" name="currency" class="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md">
+                <option>MXN</option>
+                <option>USD</option>
+                </select>
+                </div>
+                </div>
+                <p id="amount-message" class="text-xs text-red-500 -mt-2"></p>
+            </div>
+            <div class="w-1/2 pt-10">
+              <button type="button" class="focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-green-500 hover:bg-green-600 hover:shadow-lg">Calcular</button>
+            </div>        
+    </div>
+    <div id="cost" class="w-full flex flex-grow" style="display: none">
+      <svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="370" height="240" viewBox="0 0 370 240"><desc>Created with Highcharts 6.0.2</desc><defs><clipPath id="highcharts-a3gimp3-1"><rect x="0" y="0" width="350" height="174" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="370" height="240" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="30" width="350" height="174"></rect><g class="highcharts-grid highcharts-yaxis-grid "></g><rect fill="none" class="highcharts-plot-border" x="68" y="30" width="475" height="214"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" opacity="1" class="highcharts-grid-line" d="M 126.5 30 L 126.5 204"></path><path fill="none" opacity="1" class="highcharts-grid-line" d="M 242.5 30 L 242.5 204"></path><path fill="none" opacity="1" class="highcharts-grid-line" d="M 359.5 30 L 359.5 204"></path><path fill="none" class="highcharts-grid-line" d="M 9.5 30 L 9.5 204" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" opacity="1" class="highcharts-grid-line" d="M 10 204.5 L 360 204.5"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" opacity="1" class="highcharts-grid-line" d="M 10 117.5 L 360 117.5"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" opacity="1" class="highcharts-grid-line" d="M 10 29.5 L 360 29.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 360 30 L 360 204"></path></g><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 126.5 204 L 126.5 214" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 242.5 204 L 242.5 214" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 360.5 204 L 360.5 214" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 9.5 204 L 9.5 214" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 10 204.5 L 360 204.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 10 30 L 10 204"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0  highcharts-tracker" transform="translate(10,30) scale(1 1)" clip-path="url(#highcharts-a3gimp3-1)"><rect x="29.5" y="69.5" width="56" height="105" fill="#7cb5ec" rx="5" ry="5" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-0"></rect><rect x="146.5" y="47.5" width="56" height="127" fill="#7cb5ec" rx="5" ry="5" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-0"></rect><rect x="263.5" y="21.5" width="56" height="153" fill="#7cb5ec" rx="5" ry="5" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-0"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0 " transform="translate(10,30) scale(1 1)" clip-path="none"></g></g><text x="185" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><text x="185" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><g class="highcharts-data-labels highcharts-series-0 highcharts-column-series highcharts-color-0  highcharts-tracker" transform="translate(10,30) scale(1 1)" opacity="1" visibility="visible"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 chart-label" transform="translate(20,35)"><rect fill="rgba(252, 255, 197, 0.7)" class="highcharts-label-box highcharts-data-label-box" x="0" y="0" width="69" height="25" rx="3" ry="3"></rect><text x="5" style="font-size:12px;font-weight:normal;color:#000000;fill:#000000;" y="17"><tspan x="5" y="17" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">$12,083.55</tspan><tspan x="5" y="17">$12,083.55</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 chart-label" transform="translate(137,13)"><rect fill="rgba(252, 255, 197, 0.7)" class="highcharts-label-box highcharts-data-label-box" x="0" y="0" width="69" height="25" rx="3" ry="3"></rect><text x="5" style="font-size:12px;font-weight:normal;color:#000000;fill:#000000;" y="17"><tspan x="5" y="17" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">$14,601.21</tspan><tspan x="5" y="17">$14,601.21</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 chart-label" transform="translate(254,12)"><rect fill="rgba(252, 255, 197, 0.7)" class="highcharts-label-box highcharts-data-label-box" x="0" y="0" width="69" height="25" rx="3" ry="3"></rect><text x="5" style="font-size:12px;font-weight:normal;color:#000000;fill:#000000;" y="17"><tspan x="5" y="17" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">$17,643.44</tspan><tspan x="5" y="17">$17,643.44</tspan></text></g></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="68.33333333333334" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="223" opacity="1"><tspan>1 año</tspan></text><text x="185" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="223" opacity="1"><tspan>2 años</tspan></text><text x="301.6666666666667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="223" opacity="1"><tspan>3 años</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg>
+    </div>
+          </div>
+        </div>
+        <div class="w-full mt-20">
+            
+            <div class="my-8">
+  
+          </div>
+        </div>
+    </div>
+    
+  </div>
+  <section>
+  <div class="-mt-20 container m-auto bg-white  rounded">
+  <div class="px-6 py-6 rounded-sm shadow-lg xl:px-12 bg-background"><div class="flex flex-wrap -mx-4"><div class="w-full px-4">
+  <ul class="flex flex-col flex-wrap justify-between -mx-4 text-lg font-medium md:flex-row">
+    <li class="w-full px-4 my-4 md:w-1/2 lg:w-1/4">
+      <div class="w-full text-center">
+        <img src="images/icons/profits.svg" class="w-16 h-16 m-auto my-6">
+          <p class="font-normal text-txtLight">
+            <h3 class="text-xl text-green-500">Buenos rendimientos</h3>
+            <p class="text-sm">Puedes ganar con tasas de hasta 38.90% anual</p>
+          </p>
+      </div>
+    </li> 
+  <li class="w-full px-4 my-4 md:w-1/2 lg:w-1/4">
+    <div class="text-center w-full">
+      <img src="images/icons/accesible.svg" class="w-16 h-16 m-auto my-6">
+      <h3 class="text-xl text-green-500" >Accesible</h3>
+      <p class="text-sm">Puedes invertir desde $200, sólo necesitas una cuenta bancaria e internet</p>
+
+    </div>
+  </li>
+  <li class="w-full px-4 my-4 md:w-1/2 lg:w-1/4">
+    <div class="text-center w-full">
+      <img src="images/icons/transparent.svg" class="w-16 h-16 m-auto my-6">
+      <h3 class="text-xl text-green-500">Transparente</h3>
+      <p class="text-sm">Sabes exactamente el destino, plazo, retorno y riesgo de tu inversión</p>
+
+    </div>
+    </li> 
+    <li class="w-full px-4 my-4 md:w-1/2 lg:w-1/4">
+      <div class="w-full text-center">
+        <img src="images/icons/easy.svg" class="w-16 h-16 m-auto my-6">
+        <h3 class="text-xl text-green-500">Sencillo</h3>
+        <p class="text-sm">Todo por internet y sin necesidad de ser un experto en finanzas</p>
+
+      </div>
+    </li>  
+  </ul>
+</div></div></div></div>
+  </section>
+
+  <!--   HERO -->
+
+  <!-- REQUISITOS
+        <h2 class="text-4xl font-bold text-green-500 text-center my-8">Requisitos</h2>
+
+        <section class="container m-auto my-8">
+            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
+                <div class="w-full px-4 my-4 md:w-1/2 text-center">
+                    <img src="images/icons/credit-ranking.svg" class="w-20 h-20 m-auto my-6" alt="">
+                    <h3 class="text-xl text-green-500">Excelente historial crediticio</h3>
+                </div>
+                <div class="w-full px-4 my-4 md:w-1/2 ">
+                    <div class="flex flex-row items-start w-full my-4">
+                        <div class="block">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
+                        </div>
+                        <div class="pl-4">
+                            <p class="font-normal text-txtLight">
+                                Revisaremos la puntualidad de tus pagos en otros préstamos, tarjetas de crédito, etc.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start w-full my-4">
+                        <div class="block">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
+                        </div>
+                        <div class="pl-4">
+                            <p class="font-normal text-txtLight">
+                                También verificaremos que tengas al menos 2 años de experiencia en créditos con bancos o instituciones financieras.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <section class="container m-auto my-8">
+            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
+                <div class="w-full px-4 my-4 md:w-1/2 text-center">
+                    <img src="images/icons/voucher.svg" class="w-20 h-20 m-auto my-6" alt="">
+                    <h3 class="text-xl text-green-500">Comprobante de ingresos</h3>
+                </div>
+                <div class="w-full px-4 my-4 md:w-1/2 ">
+                    <div class="flex flex-row items-start w-full my-4">
+                        <div class="block">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
+                        </div>
+                        <div class="pl-4">
+                            <p class="font-normal text-txtLight">
+                                Si eres empleado te pediremos los 2 últimos meses de tus recibos de nómina o estados de cuenta.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start w-full my-4">
+                        <div class="block">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
+                        </div>
+                        <div class="pl-4">
+                            <p class="font-normal text-txtLight">
+                                Si tienes tu propio negocio te pediremos estados de cuenta bancarios.
+                            </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <section class="container m-auto my-8">
+            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
+                <div class="w-full px-4 my-4 md:w-1/2 text-center">
+                    <img src="images/icons/bank-account.svg" class="w-20 h-20 m-auto my-6" alt="">
+                    <h3 class="text-xl text-green-500">Contar con una cuenta bancaria</h3>
+                </div>
+                <div class="w-full px-4 my-4 md:w-1/2 ">
+                    <div class="flex flex-row items-start w-full my-4">
+                        <div class="block">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
+                        </div>
+                        <div class="pl-4">
+                            <p class="font-normal text-txtLight">
+                                En esta cuenta depositaremos tu préstamo y haremos el cobro de tu pago mensual de manera automática.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+-->
+
+ <!-- COMO FUNCIONA -->
+ <h2 class="text-4xl font-bold text-green-500 my-8 text-center">¿Cómo funciona?</h2>
+
+ <div class="flex m-auto w-full max-w-screen-xl">
+    <div class="w-0.5/2 m-auto">
+        <div class="container px-5 py-8 mx-auto flex flex-wrap">
+          <div class="flex flex-wrap w-full">
+            <div>
+              <div class="flex relative pb-12">
+                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                  <div class="h-full w-0.5 bg-green-500 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-green-500 border-2 bg-white text-gray-500 inline-flex items-center justify-center  relative z-10">
+                    1
+                </div>
+                <div class="flex-grow pl-4">
+                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Registro</h2>
+                  <p class="leading-relaxed">Regístrate y transfiere fondos a tu cuenta.</p>
+                </div>
+              </div>
+              <div class="flex relative pb-12">
+                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                  <div class="h-full w-0.5 bg-green-500 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-green-500 border-2 bg-white text-gray-500 inline-flex items-center justify-center  relative z-10">
+                  2
+              </div>
+                <div class="flex-grow pl-4">
+                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"> Cantidad</h2>
+                  <p class="leading-relaxed">Elige la cantidad y el plazo de inversión</p>
+                </div>
+              </div>
+              <div class="flex relative pb-12">
+                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                  <div class="h-full w-0.5 bg-green-500 pointer-events-none"></div>
+                </div>
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-green-500 border-2 bg-white text-gray-500 inline-flex items-center justify-center relative z-10">
+                  3
+              </div>
+                <div class="flex-grow pl-4">
+                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"> Rendimientos</h2>
+                  <p class="leading-relaxed">Recibe el rendimiento de tus inversiones de acuerdo al plazo seleccionado en tu cuenta.</p>
+                </div>
+              </div>
+              <div class="flex relative pb-12">
+
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-green-500 border-2 bg-white text-gray-500 inline-flex items-center justify-center relative z-10">
+                  4
+              </div>
+                <div class="flex-grow pl-4">
+                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"> Re-inversión</h2>
+                  <p class="leading-relaxed">Vuelve a invertir tus ganancias para hacer crecer aún más tu dinero.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+ </div>
+  <!-- COMO FUNCIONA -->
+  <script>
+
+    let amount = document.getElementById("amount");
+    let credit = document.getElementById("amount").value;
+    let months = document.getElementById("months");
+    let amountMessage = document.getElementById("amount-message");
+    let termMessage = document.getElementById("term-message");
+    let calculate = document.getElementById("cost");
+    
+    function message() {
+      amountMessage.innerHTML = 'Cantidad mínima de $10,000';
+    }
+    function term(){
+      termMessage.innerHTML = 'Elige un plazo';
+    }
+    function calc() {
+      amountMessage.innerHTML = '';
+      if (months.value == ''){
+        null
+      }
+      else{
+        loan();
+    }}
+    function loan(){
+      let term = months.value;
+      let cash = amount.value;
+      let mensapi =  8.9 
+      calculate.innerHTML = '<div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3"><div class="w-full my-1"><p class="text-sm text-green-800 text-opacity-0">  .</p></div><div class="w-full my-1"><p class="text-sm text-gray-800">Tasa de interés anual:</p></div><div class="w-full my-1"><p class="text-sm text-gray-800">Pago mensual:</p></div></div><div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3 text-center"><div class="w-full my-1"><p class="text-sm text-green-800">Nuestra mejor tasa</p></div><div class="w-full my-1"><p class="text-sm text-green-800">8.9%</p></div><div class="w-full my-1"><p class="text-sm text-green-800">$1,029.67</p></div></div><div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3 text-center"><div class="w-full my-1"><p class="text-sm text-red-600">Tasa de los bancos</p></div><div class="w-full my-1"><p class="text-sm text-red-600">45.0%</p></div><div class="w-full my-1"><p class="text-sm text-red-600">$1,236.27</p></div><a href="/solicitar-prestamo"><button class="bg-green-400 hover:bg-green-500 text-white font-bold p-4 rounded shadow-lg hover:shadow-xl transition duration-200">Crear cuenta </button></a></div>'
+    }
+    
+    amount.onchange = function () {
+      calculate.style.display = 'block'
+    }
+    
+    months.onchange = function (){
+      months.value == '' ? term() : calc();
+    }
+    </script>
+
+</body>
+<footer class="bg-gray-100" aria-labelledby="footerHeading">
+    <h2 id="footerHeading" class="sr-only">Footer</h2>
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="space-y-8 xl:col-span-1">
+          <img class="h-10" src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg" alt="Company name">
+          <p class="text-gray-500 text-base">
+            Préstamos e inversiones personales transparentes.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+  
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+  
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+  
+
+          </div>
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Quiero un préstamo
+              </h3>
+              <ul class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Preguntas frecuentes
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Tasas y comisiones
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Préstamos personales
+                  </a>
+                </li>
+                <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                      Crear una cuenta
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                QUIERO PRESTAR
+              </h3>
+              <ul class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Preguntas frecuentes
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    ¿Cómo funciona?
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    En qué invertir
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Simulador de inversiones
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Blog
+              </h3>
+              <ul class="mt-4 space-y-4">
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Estadísticas
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Estadísticas por trimestre
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Contacto
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Estudios
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Trabaja con nosotros
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Legal
+              </h3>
+              <ul class="mt-4 space-y-4">  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Aviso de privacidad
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Términos y condiciones
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-gray-200 pt-8">
+        <p class="text-base text-gray-400 xl:text-center">
+          &copy; 2021 MENSUALIDADES SAPI S.A. DE C.V.
+        </p>
+      </div>
+    </div>
+  </footer>
+</html>
