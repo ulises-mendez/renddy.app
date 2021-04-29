@@ -90,12 +90,11 @@
                     </div>
 </nav>
 <div class="hero-investor" style="height: 100%">
-  <div class="container m-auto flex items-end" style="height: 600px">
-
+  <div class="container m-auto flex items-end" style="min-height: 650px;padding-bottom: 105px">
       <div class="w-full mt-20 ">
-        <h1 class="text-5xl font-bold text-green-500 my-6 ">Invierte en préstamos seguros</h1>
-        <p class="text-lg">Gana buenos rendimientos prestándole a empresas con buen historial crediticio y capacidad de pago comprobada. ¡Simula tu inversión!</p>
-        <div class="w-full md:w-1/3 bg-white border-green-500  rounded my-6">
+        <h1 class="text-5xl font-bold text-green-500 my-6">Invierte en préstamos seguros</h1>
+        <p class="text-lg text-white 2xl:text-black">Gana buenos rendimientos prestándole a empresas con buen historial crediticio y capacidad de pago comprobada. ¡Simula tu inversión!</p>
+        <div class="w-full lg:w-1/2  bg-white border-green-500  rounded my-6">
           <div class="w-full flex flex-grow items-end">
           
           <div class="w-full p-4">
@@ -106,7 +105,7 @@
                   $
                 </span>
               </div>
-                <input type="text" name="amount" id="amount"  min="10000"  max="500000" step="500" pattern="([0-9]+.{0,1}[0-9]*,{0,1})*[0-9]" class="appearance-none block w-full pl-7 bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60" placeholder="100,000.00">
+                <input type="text" name="amount" id="amount" class="appearance-none block w-full pl-7 bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60" placeholder="1,000.00">
                 <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                 <span class="text-gray-500 sm:text-sm" id="price-currency">
                   MXN
@@ -116,125 +115,179 @@
                 <p id="amount-message" class="text-xs text-red-500 -mt-2"></p>
              </div>
              <div class="w-full p-5">
-                <button type="button" class="w-full focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-green-500 hover:bg-green-600 hover:shadow-lg">Calcular</button>
+                <button onclick="calcular()" type="button" class="w-full focus:outline-none text-white text-md text-shadow py-2.5 px-5 rounded-md bg-green-500 hover:bg-green-600 hover:shadow-lg">Calcular</button>
               </div>        
           </div>
-
       </div>
-      <div class="w-full ">
+      <!-- Mensual -->
+      <div id="table" class="w-full" style="display: none">
+      <div  class="w-full" >
         <div class="w-full flex flex-row flex-wrap m-8 ml-0">
-          <div class="w-auto bg-green-700 text-white rounded p-2 flex items-center">
-            <div class="w-full">
+          <div class="w-full my-4 sm:1/2 md:my-0 md:w-auto  text-white rounded  p-2 flex items-center">
+            <div class="w-full bg-green-600 p-2">
              <p class="text-lg text-white">Plan de redimiento mensual</p>
              <p class="text-sm text-gray-100"> - Recibe tu rendimiento el primer día del mes</p>
              <p class="text-sm text-gray-100"> - Tasa anual del 18%</p>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
-              <span class="mont text-lg">Mayo</span>
-            </div>
-            <div class="w-full text-center py-2 overflow-hidden">
-               <span class="text-center text-gray-600 ">$ 650.00</span>
+          <div class="w-6  mx-2 overflow-hidden text-center flex items-center">
+            <div id="previous" class="bg-white rounded-full mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="plusSlides(-1)">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Junio</span>
             </div>
             <div class="w-full text-center py-2 overflow-hidden">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Julio</span>
             </div>
             <div class="w-full text-center py-2 ">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Agosto</span>
             </div>
             <div class="w-full text-center py-2 ">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Septiembre</span>
             </div>
             <div class="w-full text-center py-2 ">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Octubre</span>
             </div>
             <div class="w-full text-center py-2 ">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Noviembre</span>
             </div>
             <div class="w-full text-center py-2 ">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Diciembre</span>
             </div>
             <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 ">$ 1500.00</span>
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Enero</span>
+            </div>
+            <div class="w-full text-center py-2">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Febrero</span>
+            </div>
+            <div class="w-full text-center py-2">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Marzo</span>
+            </div>
+            <div class="w-full text-center py-2">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Abril</span>
+            </div>
+            <div class="w-full text-center py-2">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Mayo</span>
+            </div>
+            <div class="w-full text-center py-2 overflow-hidden">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-6  mx-2 overflow-hidden text-center flex items-center">
+            <div id="next" class="bg-white rounded-full mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="plusSlides(1)">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
         </div>
       </div>
+      <!-- Anual -->
       <div class="w-full ">
         <div class="w-full flex flex-row flex-wrap m-8 ml-0">
-          <div class="w-auto bg-green-700 text-white rounded p-2 flex items-center">
-            <div class="w-full">
-             <p class="text-lg text-white">Plan de redimiento <b>Anual</b></p>
-             <p class="text-sm text-gray-100"> - Recibe tu rendimiento al año de inversión</p>
+          <div class="w-full md:w-1/4  text-white rounded  p-2 flex items-center">
+            <div class="w-full bg-green-600 p-2">
+             <p class="text-lg text-white">Plan de redimiento <b>anual</b></p>
+             <p class="text-sm text-gray-100"> - Recibe tu rendimiento al finalizar el año</p>
              <p class="text-sm text-gray-100"> - Tasa anual del 20.4%</p>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-white-200 bg-green-700 text-white">
-              <span class="mont text-lg">1 año</span>
-            </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 ">$ 120,400.00</span>
-            </div>
-          </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden ">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
-              <span class="mont text-lg">2 años</span>
-            </div>
-            <div class="w-full text-center py-2 overflow-hidden">
-               <span class="text-center text-gray-600 ">$ 144,764.20</span>
+          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
+            <div class="bg-white rounded overflow-hidden">
+              <div class="w-full text-center py-2 border-b border-white-200 bg-green-600 text-white">
+                <span class="mont text-lg">1 año</span>
+              </div>
+              <div class="w-full text-center py-2">
+                <span id="y1" class="text-center text-gray-600 "></span>
+              </div>
             </div>
           </div>
-          <div class="w-24 bg-white rounded mx-2 overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-700 text-white">
+          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
+            <div class="bg-white rounded overflow-hidden">
+             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+                <span class="mont text-lg">2 años</span>
+             </div>
+             <div class="w-full text-center py-2 overflow-hidden">
+                 <span id="y2" class="text-center text-gray-600 "></span>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
+            <div class="bg-white rounded overflow-hidden">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">3 años</span>
             </div>
             <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 ">$ 170,124.20</span>
+               <span id="y3" class="text-center text-gray-600 "></span>
+            </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="bg-gradient-to-b text-shadow my-4 from-green-300 to-green-600 focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-green-500 hover:bg-green-600 hover:shadow-lg">Crear cuenta de inversión </button>
+      <button class="bg-green-500 text-shadow my-4 focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-green-500 hover:bg-green-600 hover:shadow-lg">Crear cuenta de inversión </button>
       </div>
-  </div>
-  
+      </div>
+</div>  
 </div>
   <section>
   <div class="-mt-20 container m-auto bg-white  rounded">
@@ -245,7 +298,7 @@
         <img src="images/icons/profits.svg" class="w-16 h-16 m-auto my-6">
           <p class="font-normal text-txtLight">
             <h3 class="text-xl text-green-500">Buenos rendimientos</h3>
-            <p class="text-sm">Puedes ganar con tasas de hasta 38.90% anual</p>
+            <p class="text-sm">Puedes ganar con tasas de hasta 20.4% anual</p>
           </p>
       </div>
     </li> 
@@ -253,7 +306,7 @@
     <div class="text-center w-full">
       <img src="images/icons/accesible.svg" class="w-16 h-16 m-auto my-6">
       <h3 class="text-xl text-green-500" >Accesible</h3>
-      <p class="text-sm">Puedes invertir desde $200, sólo necesitas una cuenta bancaria e internet</p>
+      <p class="text-sm">Puedes invertir desde $1,000.00 sólo necesitas una cuenta bancaria e internet</p>
 
     </div>
   </li>
@@ -277,92 +330,7 @@
 </div></div></div></div>
   </section>
 
-  <!--   HERO -->
-
-  <!-- REQUISITOS
-        <h2 class="text-4xl font-bold text-green-500 text-center my-8">Requisitos</h2>
-
-        <section class="container m-auto my-8">
-            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
-                <div class="w-full px-4 my-4 md:w-1/2 text-center">
-                    <img src="images/icons/credit-ranking.svg" class="w-20 h-20 m-auto my-6" alt="">
-                    <h3 class="text-xl text-green-500">Excelente historial crediticio</h3>
-                </div>
-                <div class="w-full px-4 my-4 md:w-1/2 ">
-                    <div class="flex flex-row items-start w-full my-4">
-                        <div class="block">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
-                        </div>
-                        <div class="pl-4">
-                            <p class="font-normal text-txtLight">
-                                Revisaremos la puntualidad de tus pagos en otros préstamos, tarjetas de crédito, etc.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row items-start w-full my-4">
-                        <div class="block">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
-                        </div>
-                        <div class="pl-4">
-                            <p class="font-normal text-txtLight">
-                                También verificaremos que tengas al menos 2 años de experiencia en créditos con bancos o instituciones financieras.
-                            </p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-          <section class="container m-auto my-8">
-            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
-                <div class="w-full px-4 my-4 md:w-1/2 text-center">
-                    <img src="images/icons/voucher.svg" class="w-20 h-20 m-auto my-6" alt="">
-                    <h3 class="text-xl text-green-500">Comprobante de ingresos</h3>
-                </div>
-                <div class="w-full px-4 my-4 md:w-1/2 ">
-                    <div class="flex flex-row items-start w-full my-4">
-                        <div class="block">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
-                        </div>
-                        <div class="pl-4">
-                            <p class="font-normal text-txtLight">
-                                Si eres empleado te pediremos los 2 últimos meses de tus recibos de nómina o estados de cuenta.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row items-start w-full my-4">
-                        <div class="block">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
-                        </div>
-                        <div class="pl-4">
-                            <p class="font-normal text-txtLight">
-                                Si tienes tu propio negocio te pediremos estados de cuenta bancarios.
-                            </p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-          <section class="container m-auto my-8">
-            <div class="w-full flex  flex-wrap max-w-screen-lg p-6 bg-white rounded shadow-lg m-auto">
-                <div class="w-full px-4 my-4 md:w-1/2 text-center">
-                    <img src="images/icons/bank-account.svg" class="w-20 h-20 m-auto my-6" alt="">
-                    <h3 class="text-xl text-green-500">Contar con una cuenta bancaria</h3>
-                </div>
-                <div class="w-full px-4 my-4 md:w-1/2 ">
-                    <div class="flex flex-row items-start w-full my-4">
-                        <div class="block">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 p-1 rounded-sm fill-current bg-green-400 text-primaryDarkk"><path fill="white" d="M18.71 7.21a1 1 0 00-1.42 0l-7.45 7.46-3.13-3.14A1 1 0 105.29 13l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z"></path></svg>
-                        </div>
-                        <div class="pl-4">
-                            <p class="font-normal text-txtLight">
-                                En esta cuenta depositaremos tu préstamo y haremos el cobro de tu pago mensual de manera automática.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-
--->
+  
 
  <!-- COMO FUNCIONA -->
  <h2 class="text-4xl font-bold text-green-500 my-8 text-center">¿Cómo funciona?</h2>
@@ -425,44 +393,106 @@
     </div>
  </div>
   <!-- COMO FUNCIONA -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.0.3/autoNumeric.js"></script>
+
+  <!-- COMO FUNCIONA -->
   <script>
-/*
-    let amount = document.getElementById("amount");
-    let credit = document.getElementById("amount").value;
-    let months = document.getElementById("months");
-    let amountMessage = document.getElementById("amount-message");
-    let termMessage = document.getElementById("term-message");
-    let calculate = document.getElementById("cost");
+    var table = $("#table");
+    var months = $(".mpay");
+    var y1 = $("#y1");
+    var y2 = $("#y2");
+    var y3 = $("#y3");
+    var slides = $(".table-month");
+    var previous = $("#previous");
+    var next = $("#next");
+    var theNumber = new AutoNumeric('#amount', AutoNumeric.getPredefinedOptions().numericPos.dotDecimalCharCommaSeparator);
+      
+    var slideIndex = 0;
+
+    var sizeWindow = $(window).width();
+    var nSlides = sizeWindow < 1024 ? 3 : sizeWindow < 1280 ? 5 : sizeWindow < 1535 ? 8 : 10;
     
-    function message() {
-      amountMessage.innerHTML = 'Cantidad mínima de $10,000';
+    function addCommas(nStr)
+    {
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
     }
-    function term(){
-      termMessage.innerHTML = 'Elige un plazo';
+    return x1 + x2;
     }
-    function calc() {
-      amountMessage.innerHTML = '';
-      if (months.value == ''){
-        null
+
+    function calcular(){
+      var amount = theNumber.getNumericString();
+      var mProf = amount * .015;
+      var month = mProf.toFixed(2);
+      var yearA = amount * 1.204;
+      var yearB = yearA * 1.204;
+      var yearC = yearB * 1.204;
+      var A = yearA.toFixed(2);
+      var B = yearB.toFixed(2);
+      var C = yearC.toFixed(2);
+      months.each(function(){$(this).html('$ ' + addCommas(month))})
+      table.css('display','block');
+      y1.html('$ ' + addCommas(A));
+      y2.html('$ ' + addCommas(B));
+      y3.html('$ ' + addCommas(C));
+    }
+
+    showSlides(slideIndex,nSlides);
+    // next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n, nSlides);
+    }
+    
+    $(window).resize(function () {
+      if($(window).width() > 1535){
+        nSlides = 10;
+        showSlides(slideIndex,nSlides);
       }
+      if($(window).width() > 1280 &&  $( window ).width() < 1536){
+        nSlides = 8;
+        showSlides(slideIndex,nSlides);
+      }
+      if($(window).width() > 1024 &&  $( window ).width() < 1280){
+        nSlides = 5;
+        showSlides(slideIndex,nSlides);
+      }
+      if( $( window ).width() < 1024){
+        nSlides = 3;
+        showSlides(slideIndex,nSlides);
+      }
+    })
+
+
+
+    function showSlides(n,x) {
+      var i;
+
+      
+      var endSlice = x;
+      var maxLenght = 12 - endSlice;
+      if (n < maxLenght) {next.css('opacity','1');next.css('cursor','pointer')}
+      if (n >= maxLenght) {next.css('opacity','0.3');next.css('cursor','default');slideIndex = maxLenght; }
+      if (n <= 0) {slideIndex = 0; previous.css('opacity','0.3');previous.css('cursor','default');}
       else{
-        loan();
-    }}
-    function loan(){
-      let term = months.value;
-      let cash = amount.value;
-      let mensapi =  8.9 
-      calculate.innerHTML = '<div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3"><div class="w-full my-1"><p class="text-sm text-green-800 text-opacity-0">  .</p></div><div class="w-full my-1"><p class="text-sm text-gray-800">Tasa de interés anual:</p></div><div class="w-full my-1"><p class="text-sm text-gray-800">Pago mensual:</p></div></div><div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3 text-center"><div class="w-full my-1"><p class="text-sm text-green-800">Nuestra mejor tasa</p></div><div class="w-full my-1"><p class="text-sm text-green-800">8.9%</p></div><div class="w-full my-1"><p class="text-sm text-green-800">$1,029.67</p></div></div><div class="w-full px-4 my-4 md:w-1/2 lg:w-1/3 text-center"><div class="w-full my-1"><p class="text-sm text-red-600">Tasa de los bancos</p></div><div class="w-full my-1"><p class="text-sm text-red-600">45.0%</p></div><div class="w-full my-1"><p class="text-sm text-red-600">$1,236.27</p></div><a href="/solicitar-prestamo"><button class="bg-green-400 hover:bg-green-500 text-white font-bold p-4 rounded shadow-lg hover:shadow-xl transition duration-200">Crear cuenta </button></a></div>'
+        previous.css('opacity','1');previous.css('cursor','pointer');
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides.slice(slideIndex, slideIndex + endSlice).each(function(index) {$(this).show()});
+     
     }
-    
-    amount.onchange = function () {
-      calculate.style.display = 'block'
-    }
-    
-    months.onchange = function (){
-      months.value == '' ? term() : calc();
-    }
-    */
+
+
     </script>
 
 </body>
