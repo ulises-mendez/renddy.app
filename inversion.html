@@ -18,7 +18,7 @@
     </style>
     -->
 
-    <title>Invertir en préstamos | mensapi.com</title>
+    <title>Invertir en préstamos | renddy.com</title>
 </head>
 <body>
     <nav class="flex items-center justify-between justify-items-stretch flex-wrap bg-teal-500 p-6">
@@ -115,26 +115,23 @@
                 <p id="amount-message" class="text-xs text-red-500 -mt-2"></p>
              </div>
              <div class="w-full p-5">
-                <button onclick="calcular()" type="button" class="w-full focus:outline-none text-white text-md text-shadow py-2.5 px-5 rounded-md bg-blue-600 hover:bg-blue-700 hover:shadow-lg">Calcular</button>
+                <button onclick="calcular()" type="button" class="w-full focus:outline-none text-white text-md text-shadow py-2.5 px-5 rounded-md bg-blue-600 hover:shadow-lg">Calcular</button>
               </div>        
           </div>
       </div>
       <!-- Mensual -->
       <div id="table" class="w-full" style="display: none;">
       <div  class="w-full flex" >
-        <div class="w-1/4">
+        <div class="w-1/2">
           <div class="w-full my-4 sm:1/2 md:my-0 md:w-auto  text-white rounded  p-2 flex items-center">
             <div class="w-full bg-blue-600 p-2">
              <p class="text-lg text-white">Plan de redimiento <b>mensual</b> :</p>
              <p class="text-sm text-gray-100"> - Recibe tu rendimiento el primer día del mes</p>
-             <p class="text-sm text-gray-100"> - Tasa anual del 18%</p>
+             <p class="text-sm text-gray-100"> - Tasa anual del 15%</p>
             </div>
           </div>
-        </div>
-        <div class="w-2/4 flex flex-wrap px-8 ml-0">
-
           <div class="w-full flex mb-4 justify-center">
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Junio</span>
               </div>
@@ -142,7 +139,7 @@
                  <span class="text-center text-gray-600 mpay"></span>
               </div>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Julio</span>
               </div>
@@ -150,7 +147,7 @@
                  <span class="text-center text-gray-600 mpay"></span>
               </div>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Agosto</span>
               </div>
@@ -158,7 +155,7 @@
                  <span class="text-center text-gray-600 mpay"></span>
               </div>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Septiembre</span>
               </div>
@@ -166,7 +163,7 @@
                  <span class="text-center text-gray-600 mpay"></span>
               </div>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Octubre</span>
               </div>
@@ -174,7 +171,7 @@
                  <span class="text-center text-gray-600 mpay"></span>
               </div>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
                 <span class="mont text-lg">Noviembre</span>
               </div>
@@ -183,109 +180,110 @@
               </div>
             </div>
           </div>
-
+          <!--  FIN 6 MESES -->
           <div class="w-full flex justify-center">
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Diciembre</span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Diciembre</span>
+              </div>
+              <div class="w-full text-center py-2">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 mpay"></span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Enero</span>
+              </div>
+              <div class="w-full text-center py-2">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-          </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Enero</span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Febrero</span>
+              </div>
+              <div class="w-full text-center py-2">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 mpay"></span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Marzo</span>
+              </div>
+              <div class="w-full text-center py-2">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-          </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Febrero</span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Abril</span>
+              </div>
+              <div class="w-full text-center py-2">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 mpay"></span>
+            <div class="w-1/6 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+              <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                <span class="mont text-lg">Mayo</span>
+              </div>
+              <div class="w-full text-center py-2 overflow-hidden">
+                 <span class="text-center text-gray-600 mpay"></span>
+              </div>
             </div>
-          </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Marzo</span>
             </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 mpay"></span>
-            </div>
-          </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Abril</span>
-            </div>
-            <div class="w-full text-center py-2">
-               <span class="text-center text-gray-600 mpay"></span>
-            </div>
-          </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">Mayo</span>
-            </div>
-            <div class="w-full text-center py-2 overflow-hidden">
-               <span class="text-center text-gray-600 mpay"></span>
-            </div>
-          </div>
-          </div>
-
-          <div class="w-full flex mb-4">
-            <div class="w-full text-center bg-blue-600 rounded p-4 text-white mt-4">
+            <div class="w-full flex mb-4">
+            <div class="w-full mx-2 text-center bg-blue-600 rounded p-4 text-white mt-4">
                 <p>Rendimiento total = <span id="total"></span></p>
             </div>
           </div>
-
+        </div>
+        <div class="w-1/2 flex flex-wrap px-8 ml-0">
+          <div class="w-full ">
+            <div class="w-full flex flex-row flex-wrap  ml-0">
+              <div class="w-full  text-white rounded  p-2 flex ">
+                <div class="w-full bg-blue-600 p-2">
+                 <p class="text-lg text-white">Plan de rendimiento <b>anual</b>:</p>
+                 <p class="text-sm text-gray-100"> - Recibe tu rendimiento al finalizar el año</p>
+                 <p class="text-sm text-gray-100"> - Tasa anual del 16.07%</p>
+                </div>
+              </div>
+            </div>
+              </div>
+              <div class="w-full   p-2 ">
+                <div class="bg-white rounded overflow-hidden">
+                  <div class="w-full text-center py-2 border-b border-white-200 bg-blue-600 text-white">
+                    <span class="mont text-lg">1 año</span>
+                  </div>
+                  <div class="w-full text-center py-2">
+                    <span id="y1" class="text-center text-gray-600 "></span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full   p-2 ">
+                <div class="bg-white rounded overflow-hidden">
+                 <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                    <span class="mont text-lg">2 años</span>
+                 </div>
+                 <div class="w-full text-center py-2 overflow-hidden">
+                     <span id="y2" class="text-center text-gray-600 "></span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full 5  p-2 ">
+                <div class="bg-white rounded overflow-hidden">
+                <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
+                  <span class="mont text-lg">3 años</span>
+                </div>
+                <div class="w-full text-center py-2">
+                   <span id="y3" class="text-center text-gray-600 "></span>
+                </div>
+                </div>
+            </div>
         </div>
       </div>
       <!-- Anual -->
-      <div class="w-full ">
-        <div class="w-full flex flex-row flex-wrap m-8 ml-0">
-          <div class="w-full md:w-1/4  text-white rounded  p-2 flex items-center">
-            <div class="w-full bg-blue-600 p-2">
-             <p class="text-lg text-white">Plan de redimiento <b>anual</b>:</p>
-             <p class="text-sm text-gray-100"> - Recibe tu rendimiento al finalizar el año</p>
-             <p class="text-sm text-gray-100"> - Tasa anual del 20.4%</p>
-            </div>
-          </div>
-          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
-            <div class="bg-white rounded overflow-hidden">
-              <div class="w-full text-center py-2 border-b border-white-200 bg-blue-600 text-white">
-                <span class="mont text-lg">1 año</span>
-              </div>
-              <div class="w-full text-center py-2">
-                <span id="y1" class="text-center text-gray-600 "></span>
-              </div>
-            </div>
-          </div>
-          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
-            <div class="bg-white rounded overflow-hidden">
-             <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-                <span class="mont text-lg">2 años</span>
-             </div>
-             <div class="w-full text-center py-2 overflow-hidden">
-                 <span id="y2" class="text-center text-gray-600 "></span>
-              </div>
-            </div>
-          </div>
-          <div class="w-1/3 sm:w-1/5 md:w-1/4 p-2 ">
-            <div class="bg-white rounded overflow-hidden">
-            <div class="w-full text-center py-2 border-b border-gray-200 bg-blue-600 text-white">
-              <span class="mont text-lg">3 años</span>
-            </div>
-            <div class="w-full text-center py-2">
-               <span id="y3" class="text-center text-gray-600 "></span>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="bg-green-500 text-shadow my-4 focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-blue-600 hover:bg-blue-700 hover:shadow-lg">Crear cuenta de inversión </button>
+
+      <button class="bg-green-500 text-shadow my-4 focus:outline-none text-white text-md py-2.5 px-5 rounded-md bg-blue-600 hover:bg-blue-00 hover:shadow-lg">Crear cuenta de inversión </button>
       </div>
       </div>
 </div>  
