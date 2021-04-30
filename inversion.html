@@ -120,24 +120,20 @@
           </div>
       </div>
       <!-- Mensual -->
-      <div id="table" class="w-full" >
+      <div id="table" class="w-full" style="display: none;">
       <div  class="w-full flex" >
         <div class="w-1/4">
           <div class="w-full my-4 sm:1/2 md:my-0 md:w-auto  text-white rounded  p-2 flex items-center">
             <div class="w-full bg-green-600 p-2">
-             <p class="text-lg text-white">Plan de redimiento mensual</p>
+             <p class="text-lg text-white">Plan de redimiento <b>mensual</b> :</p>
              <p class="text-sm text-gray-100"> - Recibe tu rendimiento el primer día del mes</p>
              <p class="text-sm text-gray-100"> - Tasa anual del 18%</p>
             </div>
           </div>
         </div>
         <div class="w-2/4 flex flex-wrap px-8 ml-0">
-          <div class="w-full flex mb-4">
-            <div class="w-full text-center  bg-green-600 p-4 text-white">
-                <h2>Recibe pagos mensuales por un año</h2>
-            </div>
-          </div>
-          <div class="w-full flex mb-4">
+
+          <div class="w-full flex mb-4 justify-center">
             <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
               <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
                 <span class="mont text-lg">Junio</span>
@@ -188,7 +184,7 @@
             </div>
           </div>
 
-          <div class="w-full flex">
+          <div class="w-full flex justify-center">
           <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Diciembre</span>
@@ -240,7 +236,7 @@
           </div>
 
           <div class="w-full flex mb-4">
-            <div class="w-full text-center bg-gray-50 border border-gray-100 p-4 text-green-500 mt-4">
+            <div class="w-full text-center bg-green-600 rounded p-4 text-white mt-4">
                 <p>Rendimiento total = <span id="total"></span></p>
             </div>
           </div>
@@ -252,7 +248,7 @@
         <div class="w-full flex flex-row flex-wrap m-8 ml-0">
           <div class="w-full md:w-1/4  text-white rounded  p-2 flex items-center">
             <div class="w-full bg-green-600 p-2">
-             <p class="text-lg text-white">Plan de redimiento <b>anual</b></p>
+             <p class="text-lg text-white">Plan de redimiento <b>anual</b>:</p>
              <p class="text-sm text-gray-100"> - Recibe tu rendimiento al finalizar el año</p>
              <p class="text-sm text-gray-100"> - Tasa anual del 20.4%</p>
             </div>
@@ -441,9 +437,9 @@
       var rateYear = monthRate * 12;
       var profitmonth = rateYear.toFixed(2);
       var month = monthRate.toFixed(2);
-      var yearA = amount * 1.204;
-      var yearB = yearA * 1.204;
-      var yearC = yearB * 1.204;
+      var yearA = amount * 1.1607545;
+      var yearB = yearA * 1.1607545;
+      var yearC = yearB * 1.1607545;
       var A = yearA.toFixed(2);
       var B = yearB.toFixed(2);
       var C = yearC.toFixed(2);
