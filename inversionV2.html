@@ -120,9 +120,9 @@
           </div>
       </div>
       <!-- Mensual -->
-      <div id="table" class="w-full" >
-      <div  class="w-full flex" >
-        <div class="w-1/4">
+      <div id="table" class="w-full" style="display: none">
+      <div  class="w-full" >
+        <div class="w-full flex flex-row flex-wrap m-8 ml-0">
           <div class="w-full my-4 sm:1/2 md:my-0 md:w-auto  text-white rounded  p-2 flex items-center">
             <div class="w-full bg-green-600 p-2">
              <p class="text-lg text-white">Plan de redimiento mensual</p>
@@ -130,66 +130,62 @@
              <p class="text-sm text-gray-100"> - Tasa anual del 18%</p>
             </div>
           </div>
-        </div>
-        <div class="w-2/4 flex flex-wrap px-8 ml-0">
-          <div class="w-full flex mb-4">
-            <div class="w-full text-center  bg-green-600 p-4 text-white">
-                <h2>Recibe pagos mensuales por un año</h2>
+          <div class="w-6  mx-2 overflow-hidden text-center flex items-center">
+            <div id="previous" class="bg-white rounded-full mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="plusSlides(-1)">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
             </div>
           </div>
-          <div class="w-full flex mb-4">
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Junio</span>
-              </div>
-              <div class="w-full text-center py-2 overflow-hidden">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Junio</span>
             </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Julio</span>
-              </div>
-              <div class="w-full text-center py-2 ">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
-            </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Agosto</span>
-              </div>
-              <div class="w-full text-center py-2 ">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
-            </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Septiembre</span>
-              </div>
-              <div class="w-full text-center py-2 ">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
-            </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Octubre</span>
-              </div>
-              <div class="w-full text-center py-2 ">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
-            </div>
-            <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
-              <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
-                <span class="mont text-lg">Noviembre</span>
-              </div>
-              <div class="w-full text-center py-2 ">
-                 <span class="text-center text-gray-600 mpay"></span>
-              </div>
+            <div class="w-full text-center py-2 overflow-hidden">
+               <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-
-          <div class="w-full flex">
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Julio</span>
+            </div>
+            <div class="w-full text-center py-2 ">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Agosto</span>
+            </div>
+            <div class="w-full text-center py-2 ">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Septiembre</span>
+            </div>
+            <div class="w-full text-center py-2 ">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Octubre</span>
+            </div>
+            <div class="w-full text-center py-2 ">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
+            <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
+              <span class="mont text-lg">Noviembre</span>
+            </div>
+            <div class="w-full text-center py-2 ">
+               <span class="text-center text-gray-600 mpay"></span>
+            </div>
+          </div>
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Diciembre</span>
             </div>
@@ -197,7 +193,7 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Enero</span>
             </div>
@@ -205,7 +201,7 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Febrero</span>
             </div>
@@ -213,7 +209,7 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Marzo</span>
             </div>
@@ -221,7 +217,7 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Abril</span>
             </div>
@@ -229,7 +225,7 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          <div class="w-24 bg-gray-50 rounded mx-2 overflow-hidden table-month">
+          <div class="w-24 bg-white rounded mx-2 overflow-hidden table-month">
             <div class="w-full text-center py-2 border-b border-gray-200 bg-green-600 text-white">
               <span class="mont text-lg">Mayo</span>
             </div>
@@ -237,14 +233,13 @@
                <span class="text-center text-gray-600 mpay"></span>
             </div>
           </div>
-          </div>
-
-          <div class="w-full flex mb-4">
-            <div class="w-full text-center bg-gray-50 border border-gray-100 p-4 text-green-500 mt-4">
-                <p>Rendimiento total = <span id="total"></span></p>
+          <div class="w-6  mx-2 overflow-hidden text-center flex items-center">
+            <div id="next" class="bg-white rounded-full mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="plusSlides(1)">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
-
         </div>
       </div>
       <!-- Anual -->
@@ -408,7 +403,6 @@
   <script>
     var table = $("#table");
     var months = $(".mpay");
-    var total = $("#total");
     var y1 = $("#y1");
     var y2 = $("#y2");
     var y3 = $("#y3");
@@ -437,30 +431,27 @@
 
     function calcular(){
       var amount = theNumber.getNumericString();
-      var monthRate = amount * .0125;
-      var rateYear = monthRate * 12;
-      var profitmonth = rateYear.toFixed(2);
-      var month = monthRate.toFixed(2);
+      var mProf = amount * .015;
+      var month = mProf.toFixed(2);
       var yearA = amount * 1.204;
       var yearB = yearA * 1.204;
       var yearC = yearB * 1.204;
       var A = yearA.toFixed(2);
       var B = yearB.toFixed(2);
       var C = yearC.toFixed(2);
-      table.css('display','block');
       months.each(function(){$(this).html('$ ' + addCommas(month))})
-      total.html(addCommas("$ " + profitmonth));
+      table.css('display','block');
       y1.html('$ ' + addCommas(A));
       y2.html('$ ' + addCommas(B));
       y3.html('$ ' + addCommas(C));
-    } 
+    }
 
     showSlides(slideIndex,nSlides);
     // next/previous controls
     function plusSlides(n) {
       showSlides(slideIndex += n, nSlides);
     }
-    /*
+    
     $(window).resize(function () {
       if($(window).width() > 1535){
         nSlides = 10;
@@ -501,7 +492,7 @@
      
     }
 
-*/
+
     </script>
 
 </body>
