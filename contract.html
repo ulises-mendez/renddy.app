@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family:'Karla',sans-serif;
+            }
+        .error{
+          color:red
+        }
+    </style>
+    <!-- Normalize.css conflicts
+
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+    </style>
+    -->
+
+    <title>Renddy para inversionistas | renddy.com</title>
+</head>
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <svg viewBox="0 0 900 335.6" xmlns="http://www.w3.org/2000/svg" width="125px">
+        <style type="text/css">
+            .st0{fill:url(#SVGID_1_);}
+        </style>
+        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.1474" y1="167.4969" x2="897.8525" y2="167.4969">
+            <stop  offset="0" style="stop-color:#006EFF"/>
+            <stop  offset="1" style="stop-color:#00F0AB"/>
+        </linearGradient>
+        <path class="st0" d="M239.6,84.5c3.9,34.3-16.4,71.5-62.5,88.8l30.7,92.4h-63.2c-14.1,0-26.5-9.6-29.9-23.4l-16.2-68
+            c0,0-31.8,9.5-27.9,89.9c0,0.8-0.5,1.5-1.3,1.5H12.4c-5,0-9.3-3.7-9.7-8.5c-7.6-103.4,62.1-142,99.2-151.1c0.3-0.1,0.5,0.2,0.5,0.4
+            L99,123.6c-0.1,0.6,0.4,1,1,0.8c9.9-4.1,77.9-31.9,90.6-37.1c0.7-0.3,0.7-1.3-0.1-1.5c-11.8-3.8-70.6-22.8-77.9-25.2
+            c-0.4-0.1-0.8,0.1-0.9,0.5l-2.9,13.7c-0.1,0.7-0.8,1.2-1.5,1.2c-41.7,1.6-77,20.4-84.5,24.5c-0.6,0.3-1.2-0.2-1.1-0.8l16.9-84.2
+            c0.4-2.2,2.5-3.8,4.8-3.8h100.7C205.5,11.7,235.2,46.3,239.6,84.5z M265.8,150.3c-11.5,9.7-19.9,24.7-25.1,45.1
+            c-2.3,9.1-3.4,17.4-3.4,25c0,6.8,1,13.1,2.9,19c1.9,5.9,5.1,11,9.5,15.3c4.4,4.3,10.1,7.7,17.2,10.2c7.1,2.5,15.7,3.8,25.9,3.8
+            c8.6,0,16-0.8,22.4-2.4c6.4-1.6,12.4-3.6,18.1-5.8l9-31.7c-6.1,2.3-12.3,4.2-18.4,5.7c-6.1,1.5-13.2,2.3-21.1,2.3
+            c-3.2,0-6.2-0.2-8.8-0.6c-2.7-0.4-5-1.3-6.9-2.8c-1.9-1.5-3.4-3.5-4.5-6.2c-1.1-2.7-1.6-6.3-1.6-10.8l22.8-1
+            c7.9-0.3,15.1-1.4,21.7-3.1c6.5-1.8,12.1-4.4,16.7-8c4.6-3.5,8.2-7.9,10.8-13.2c2.6-5.2,3.9-11.5,3.9-18.8
+            c0-24.2-15.2-36.3-45.5-36.3C292.5,135.8,277.4,140.6,265.8,150.3z M315,169.2c1.7,1.6,2.5,4.1,2.5,7.5c0,4.7-1.4,8-4.2,10.1
+            c-2.8,2-7.3,3.2-13.5,3.5l-15.3,0.5c2.4-9.2,5.4-15.5,9-18.9c3.6-3.4,7.9-5.1,13.1-5.1C310.5,166.8,313.3,167.6,315,169.2z
+             M397.3,265.6l14.3-73.7c0.5-2.9,1.2-5.7,2.2-8.2s2.2-4.9,3.8-7c1.5-2.1,3.3-3.8,5.4-5c2.1-1.2,4.6-1.8,7.5-1.8c3.7,0,6.3,1,7.8,2.9
+            c1.5,1.9,2.2,4.6,2.2,8c0,2.3-0.2,4.8-0.7,7.8l-14.8,77h43.9l16-81.9c1-4.8,1.5-9.5,1.5-14.1c0-5-0.6-9.6-1.9-13.7
+            c-1.3-4.1-3.3-7.7-6.1-10.7s-6.3-5.3-10.5-7c-4.3-1.7-9.4-2.5-15.4-2.5c-8.7,0-16.1,1.7-22,5.2c-6,3.5-11.1,7.9-15.3,13.2l0.7-15.5
+            h-37.6l-24.7,126.9H397.3z M601.9,265.6l35.4-180h-44.1L583,137.2c-4.8-1-9.9-1.5-15-1.5c-9.1,0-17.4,1.3-25.2,4
+            c-7.8,2.7-14.7,6.5-21,11.5c-6.2,5-11.5,11.1-15.9,18.3c-4.4,7.2-7.6,15.2-9.7,24.1c-2.4,9.7-3.6,19.2-3.6,28.6
+            c0,6.5,0.6,12.5,1.9,18.2c1.3,5.7,3.4,10.5,6.3,14.7c2.9,4.1,6.7,7.4,11.5,9.8c4.8,2.4,10.6,3.6,17.6,3.6c7.4,0,13.9-1.6,19.5-4.7
+            c5.6-3.2,10.7-7.9,15.4-14.2l-0.5,16H601.9z M568.7,210.4c-1.6,7.9-4,14-7.3,18.3c-3.2,4.3-7.4,6.4-12.6,6.4c-3.9,0-6.9-1.1-9.1-3.4
+            c-2.2-2.3-3.3-6.2-3.3-11.9c0-2.7,0.2-5.9,0.7-9.3c0.5-3.5,1.4-7.5,2.7-12c3.1-11.3,7-19.1,11.7-23.3c4.8-4.2,10.1-6.3,15.9-6.3
+            c2.6,0,5.7,0.4,9.2,1.2L568.7,210.4z M736.3,265.6l35.4-180h-44.1l-10.2,51.6c-4.8-1-9.9-1.5-15-1.5c-9.1,0-17.5,1.3-25.2,4
+            c-7.8,2.7-14.7,6.5-21,11.5c-6.2,5-11.5,11.1-15.9,18.3c-4.4,7.2-7.6,15.2-9.7,24.1c-2.4,9.7-3.6,19.2-3.6,28.6
+            c0,6.5,0.6,12.5,1.9,18.2c1.3,5.7,3.4,10.5,6.3,14.7c2.9,4.1,6.7,7.4,11.5,9.8c4.8,2.4,10.6,3.6,17.6,3.6c7.4,0,13.9-1.6,19.5-4.7
+            c5.6-3.2,10.7-7.9,15.4-14.2l-0.5,16H736.3z M703.1,210.4c-1.6,7.9-4,14-7.3,18.3c-3.2,4.3-7.4,6.4-12.6,6.4c-3.9,0-6.9-1.1-9.1-3.4
+            c-2.2-2.3-3.3-6.2-3.3-11.9c0-2.7,0.2-5.9,0.7-9.3c0.5-3.5,1.4-7.5,2.7-12c3.1-11.3,7-19.1,11.7-23.3s10.1-6.3,15.9-6.3
+            c2.6,0,5.7,0.4,9.2,1.2L703.1,210.4z M788.3,263.7l-3.4,7.5c-3.1,6.5-6.5,11.2-10.2,14.2s-9.2,4.5-16.5,4.5c-3.2,0-6.2-0.2-9-0.7
+            c-2.7-0.5-5.2-1.1-7.5-1.7l-10.2,30.5c4.2,1.5,8.6,2.7,13.1,3.8c4.5,1.1,10.3,1.6,17.5,1.6c6.6,0,12.7-0.6,18.3-1.8
+            c5.6-1.2,10.8-3.4,15.6-6.5c4.8-3.2,9.5-7.4,13.9-12.8c4.4-5.4,8.8-12.3,13.2-20.7l74.6-142.7h-47.7l-32.5,82.6l-2.2-82.6h-48.7
+            L788.3,263.7z"/>
+        </svg>            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div>
+                  <a href="/preguntas-frecuentes"> Preguntas frecuentes</a>
+              </div>
+                <div class="ml-3 relative">
+                <a href=""> Salir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </nav>
+
+ <!-- MAIN --> 
+ <div class="bg-gray-100 min-h-screen">
+<div class="container m-auto pt-20">
+ <div class="w-full m-auto flex flex-wrap max-w-7xl">
+    <div class="w-full md:w-1/3">
+        <h1 class="text-2xl text-gray-500">Firma tu contrato para empezar a ser un inversionista.</h1>
+    </div>
+    <div class="w-full md:w-2/3">
+        <div class="w-full bg-white p-4">
+            <div class="w-full text-md text-gray-500" id="contract" style="max-height:450px; overflow:scroll">
+                <h2 class="text-md text-gray-500 font-bold">CONTRATO DE COMISIÓN MERCANTIL NÚMERO 1867776 QUE CELEBRAN POR UNA PARTE MENSAPI DE C.V., REPRESENTADA EN ESTE ACTO POR SU PRESIDENTE DEL CONSEJO DE ADMINISTRACIÓN A QUIEN EN LO SUCESIVO SE DESIGNARÁ COMO "RENDDY" Y POR OTRA PARTE Ulises Eduardo Méndez López, POR SU PROPIO DERECHO A QUIEN EN LO SUCESIVO SE LE DESIGNARÁ COMO "EL COMITENTE", Y A QUIENES CUANDO SE LES MENCIONE EN CONJUNTO SE LES DESIGNARA COMO "LAS PARTES", DE CONFORMIDAD CON LAS DECLARACIONES Y CLÁUSULAS SIGUIENTES:</h2>
+ 
+                <h2 class="text-md text-gray-500 font-bold my-2">   D E C L A R A C I O N E S</h2>
+                 
+                <h3 class="text-md text-gray-500 my-4 ml-2 ">I.          Declara RENDDY:</h3>
+            <ul>
+                    <li class="my-2">a)   Que es una Sociedad Anónima Promotora de Inversión de Capital Variable, constituida de conformidad con las leyes de la república mexicana, según consta en la escritura pública número 588, de fecha 30 de Julio de 2014, pasada ante la fe del Licenciado Diego Torres Soule, Corredor Público número 70 del Estado de Jalisco, misma que se encuentra debidamente inscrita en el Registro Público de la Propiedad y del Comercio de la ciudad de Guadalajara, Jalisco, bajo el Folio Mercantil Electrónico número 83746 con fecha 11 de Septiembre de 2014.</li>
+                    <li class="my-2">b)   Que dentro de su objeto social se encuentra: la realización de todo tipo de contratos de comisión mercantil, obrando en su nombre propio o en nombre del Comitente, pudiendo fungir en los mismos tanto como Comisionistas así como Comitentes; siendo el caso que cuando actúe como Comisionista estará facultado para celebrar todo tipo de actos jurídicos en nombre y representación del Comitente, señalándose de manera enunciativa más no limitativa los siguientes: la administración de recursos en cuentas propias a nombre y por cuenta del Comitente destinados a la celebración de contratos de mutuo con interés, préstamos mercantiles y todo tipo de contratos de apertura de crédito; la celebración a nombre y por cuenta del Comitente de contratos de mutuo con interés,  préstamos mercantiles y todo tipo de contratos de apertura de crédito; la realización de cobranza judicial y extrajudicial a nombre y por cuenta del Comitente derivada de contratos de mutuo con interés, préstamos mercantiles y todo tipo de contratos de apertura de crédito.</li>
+                    <li class="my-2">c)   Que su representante legal cuenta con capacidad legal y facultades suficientes para celebrar el presente Contrato en su nombre y representación.</li>
+                    <li class="my-2">d)   Que su domicilio se encuentra ubicado en: Calle Beethoven #287 int 301-B, Col. Residencial Juan Manuel, Guadalajara, Jalisco C.P. 44680.</li>
+                    <li class="my-2">e)   Que ni los Préstamos mercantiles que celebre en nombre y representación de LOS COMITENTES, ni ninguno de los documentos que con motivo de la realización de los mismos se generen es susceptible de circular y por ende ninguno de los documentos, actividades, obligaciones y derechos antes mencionados versan sobre valores, según los define la Ley del Mercado de Valores.</li>
+                    <li class="my-2">f)    Que en ningún momento ha realizado ninguna actividad, solicitud, ofrecimiento o promoción para la captación según se define en la Ley de Instituciones de Crédito.</li>
+                    <li class="my-2">g)   Que para todo lo relacionado con el presente contrato su correo electrónico es: info@renddy.com</li>
+                    <li class="my-2">h)  Que ha desarrollado una página web en la dirección electrónica www.renddy.com mediante la cual se lleva a cabo la celebración del presente contrato.</li>
+            </ul>
+                 <h3 class="text-md text-gray-500 my-4">II.        Declara EL COMITENTE:</h3>
+            <ul>
+                <li class="my-2">a)   Que es una persona física con capacidad legal y facultades suficientes para celebrar el presente Contrato, así como para asumir y dar cumplimiento a las obligaciones que en el mismo se establecen.</li>
+                <li class="my-2">b)   Que actúa a nombre y por cuenta propia.</li>
+                <li class="my-2">c)   Que ha solicitado a RENDDY la búsqueda de personas físicas o morales a quienes proporcionarles Préstamos Mercantiles.</li>
+                <li class="my-2">d)   Que es su voluntad que RENDDY celebre a su nombre y por su cuenta uno o varios contratos de Préstamo Mercantil, actuando en los mismos en calidad de Prestamista.</li>
+                <li class="my-2">e)   Que deberá instruir de manera puntual y específica a EL COMISIONISTA que lleve a cabo cada contrato de Préstamo mercantil que este último celebre en su nombre y por su cuenta.</li>
+                <li class="my-2">f)    Que su domicilio se encuentra ubicado en: PENDIENTE DE CONFIRMAR</li>
+                <li class="my-2">g)   Que el correo electrónico al cual deben de realizarse todo tipo de comunicaciones es: misinv2021@gmail.com</li>
+                <li class="my-2">h)  Que los recursos con que cuenta para realizar los Préstamos Mercantiles provienen de fuentes lícitas, y serán utilizados para actividades lícitas en todo momento.</li>
+            </ul>
+                <p> virtud de lo anterior, LAS PARTES convienen sujetar el presente Contrato al contenido de las siguientes:</p>
+                 
+                <h3 class="text-md text-gray-500 my-4">C L A U S U L A S</h3>
+                 
+                PRIMERA.- Objeto del contrato.- Por medio del presente contrato EL COMITENTE confiere a RENDDY, el mandato, para que en su nombre y representación realice los siguientes actos concretos de comercio:
+            <ul>    
+                <li class="my-2">1.    Buscar e identificar personas físicas interesadas en celebrar en calidad de Deudores, con EL COMITENTE en calidad de Prestamista, contratos de Préstamo Mercantil.</li>
+                <li class="my-2">2.    Realizar análisis de crédito y riesgo respecto de las solicitudes de préstamos mercantiles presentadas por los Deudores potenciales.</li>
+                <li class="my-2">3.    Presentar a EL COMITENTE diversos Deudores potenciales, señalando en cada caso las características del Préstamo mercantil solicitado y el perfil de riesgo de los Deudores potenciales.</li>
+                <li class="my-2">4.    Celebrar con los Deudores seleccionados por EL COMITENTE, a nombre y por cuenta de EL COMITENTE los contratos de Préstamo mercantil.</li>
+                <li class="my-2">5.    Recibir a nombre y por cuenta de EL COMITENTE los pagos que en su caso hagan los Deudores de los contratos de Préstamo mercantil celebrados.</li>
+                <li class="my-2">6.    Gestionar y realizar por sí mismo y por medio de cualquier tercero seleccionado para tal efecto, la cobranza con los Préstamos mercantiles, hasta su última instancia legal.</li>
+                <li class="my-2">7.    Realizar por cuenta y a nombre de EL COMITENTE factoraje, venta o cesión de derechos de cobro, de los Préstamos mercantiles celebrados a nombre y por cuenta de este último, en cualquier momento procesal o antes del inicio de un juicio, según se considere conveniente.</li>
+                <li class="my-2">8.    Refinanciar o modificar los términos de los contratos de Préstamo mercantil, para incrementar las posibilidades de pago, según RENDDY, lo considere conveniente.</li>
+            </ul>     
+                SEGUNDA.- Fondeo y acreditamiento de recursos.- EL COMITENTE depositará en la cuenta que RENDDY tiene aperturada a su nombre en la Institución: Sistema de Transferencias y Pagos STP, S.A. de C.V. SOFOM ENR, con número de Clave Bancaria Estandarizada (CLABE): 646180114718677762, la cantidad total y/o parcial que desee que RENDDY preste en su nombre y representación a los Deudores potenciales y solicitantes de préstamos mercantiles.
+            <ul>
+                <li class="my-2">Esta cantidad podrá ser aumentada en cualquier momento por parte de EL COMITENTE.</li>
+                <li class="my-2">Una vez que RENDDY reciba los recursos en su cuenta bancaria, asignará los mismos en una cuenta virtual de EL COMITENTE, quien podrá utilizar dichos recursos para fondear los préstamos mercantiles que él decida.</li>
+                <li class="my-2">EL COMITENTE podrá fondear su cuenta virtual exclusivamente por cualquiera de los siguientes medios: transferencia electrónica, cargo domiciliado, cheque o cargo a tarjeta de débito o crédito; en todos los casos EL COMITENTE deberá de ser titular de la cuenta de la cual se originan los recursos fondeados. RENDDY no reconocerá ningún depósito por parte de EL COMITENTE que contravenga lo establecido en la presente cláusula.</li>
+                <li class="my-2">Mientras los recursos abonados por EL COMITENTE a su cuenta virtual no sean utilizados para fondear algún préstamo mercantil, los mismos no generaran en favor de EL COMITENTE interés alguno.</li>
+            </ul>     
+            
+                TERCERA.- Cuenta virtual y cuenta bancaria de EL COMITENTE.- En la cuenta virtual de EL COMITENTE los recursos podrán estar en alguno de los siguientes estatus:
+            <ul>
+                <li class="my-2">1.    Recursos disponibles: (i) son recursos que se encuentran disponibles en la cuenta virtual de EL COMITENTE para ser asignados a préstamos mercantiles; o ser retirados de la cuenta virtual de EL COMITENTE y abonados a la cuenta bancaria de este último, (ii) este tipo de recursos, no generaran el pago de ningún tipo de interés o comisión en beneficio de EL COMITENTE.</li>
+                <li class="my-2">2.    Recursos Prestados: (i) son recursos que RENDDY, en cumplimiento de las instrucciones del COMITENTE, tiene efectivamente prestados a Deudores de Préstamos mercantiles, (ii) EL COMITENTE no podrá disponer de los mismos, sino hasta que estos sean efectivamente cobrados en su nombre y representación por RENDDY a los Deudores de los préstamos mercantiles, (iii) Este tipo de recursos, generarán el pago de intereses para EL COMITENTE de conformidad a las condiciones y términos pactados en cada instrucción expresa de Préstamo mercantil, girada en términos de la cláusula quinta del presente contrato, a partir de la fecha en que efectivamente se hayan celebrado los Préstamos mercantiles instruidos.</li>
+                <li class="my-2">3.    Recursos en proceso de fondeo: (i) son recursos que RENDDY asignó en cumplimiento a las instrucciones dadas por EL COMITENTE para la realización de un préstamo mercantil, habiendo seleccionado al Deudor, el monto a prestar y las condiciones del Préstamo mercantil; en el momento en que el Préstamo mercantil todavía no se ha concretado al Deudor potencial, por no encontrarse todavía fondeado completamente el Préstamo mercantil, (ii) estos recursos se encontrarán bloqueados, no pudiendo disponer EL COMITENTE de los mismos, (iii) este tipo de recursos, no generarán el pago de ningún tipo de interés o comisión en beneficio de EL COMITENTE.</li>
+                <li class="my-2">EL COMITENTE podrá retirar recursos de su cuenta virtual siempre y cuando los mismos se encuentren en el estatus de "Recursos disponibles para prestar o ser retirados".</li>
+                <li class="my-2">Cuando EL COMITENTE tenga recursos disponibles para retirar de su cuenta virtual y quiera hacerlo, solicitará a RENDDY la transferencia de los mismos a su cuenta bancaria vía la propia página web, debiendo serle acreditados los recursos a más tardar 3 (tres) días hábiles bancarios siguientes del que sean solicitados.</li>
+            </ul>     
+                CUARTA.- Selección de Préstamos mercantiles.- RENDDY buscará a través de su página web personas físicas interesadas en obtener préstamos mercantiles y utilizando un modelo de riesgos analizará las solicitudes de préstamos elaboradas por las mismas.
+                RENDDY, atendiendo a los resultados de los análisis de riesgo, aprobará o rechazará las solicitudes de préstamos mercantiles realizadas por los Deudores potenciales.
+                Cuando las solicitudes de préstamos mercantiles sean aprobadas, RENDDY elaborará un expediente virtual del Deudor potencial en el que: (i) disociará los datos personales del Deudor potencial, asignándole un sobrenombre, (ii) publicará el perfil del Deudor potencial, (iii) le asignará una calificación de riesgo, (iv) establecerá las condiciones del préstamo mercantil.
+                EL COMITENTE consultará en la página web de RENDDY el expediente virtual de los Deudores potenciales aprobados.
+                 
+                QUINTA.- Instrucción para la celebración de los contratos.- EL COMITENTE, con base en la información proporcionada por RENDDY, seleccionará a que Deudores potenciales desea realizar un Préstamo mercantil y que monto desea prestar a cada uno de ellos, emitiendo en cada caso, a través de la página web de RENDDY una instrucción expresa de préstamo, la que deberá contener:
+                1.    El sobrenombre con el que RENDDY designó al Deudor en su página web.
+                2.    El monto, que del total solicitado por el Deudor, desea prestar.
+                3.    El plazo de pago del Préstamo mercantil.
+                4.    La tasa de interés ordinaria y moratoria del Préstamo mercantil.
+                5.    La comisión que tendrá derecho RENDDY a cobrar a EL COMITENTE por la prestación de sus servicios y la forma de hacerlos efectivos.
+                6.    La forma en que el Deudor se compromete a pagar el Préstamo mercantil.
+                 
+                SEXTA.- Momento en que se lleva a cabo el Préstamo mercantil.- El hecho de que EL COMITENTE seleccione a un Deudor no implica que el préstamo mercantil sea otorgado inmediatamente, siendo el caso que el Préstamo mercantil se realizará hasta el momento en que RENDDY obtenga a través de su página web el fondeo completo  para el otorgamiento del Préstamo mercantil solicitado por el Deudor o que finalice el periodo de fondeo por parte de los prestamistas y que el deudor manifieste su conformidad para celebrar el contrato de Préstamo mercantil, a través de la página web de RENDDY.
+                 
+                SÉPTIMA.- Riesgos y exención de responsabilidades.- LAS PARTES reconocen que RENDDY actuará al momento de la celebración de los contratos de Préstamo mercantil, a nombre y por cuenta de EL COMITENTE, por lo que cualquier monto que sea prestado será por exclusiva cuenta y riesgo de EL COMITENTE.
+                LAS PARTES manifiestan que RENDDY bajo ninguna causa o circunstancia será responsable, obligado solidario o en forma alguna responderá por el pago que los Deudores deban realizar a EL COMITENTE derivado de los préstamos mercantiles celebrados por RENDDY por instrucciones y con los recursos de EL COMITENTE.
+                EL COMITENTE reconoce que la información de los Deudores solicitantes de préstamos mercantiles, es información proporcionada por los propios deudores solicitantes de préstamos mercantiles y validada en la medida de lo posible por RENDDY, sin que este último responda en forma alguna por la veracidad o certeza de la misma.
+                De igual manera, EL COMITENTE se hace sabedor que los análisis de crédito y riesgo elaborados por RENDDY, respecto de las solicitudes de préstamos mercantiles presentadas por los Deudores, fueron elaborados con base en la información presentada por los Deudores y solicitantes de préstamos mercantiles, presentada solamente para efectos informativos, por lo que RENDDY no será responsable en ninguna forma de la veracidad o certeza de los mismos.
+                LAS PARTES acuerdan que RENDDY no será responsable frente a EL COMITENTE en los términos del artículo 303 del Código de Comercio.
+                 
+                OCTAVA.- Pagos anticipados.- El Deudor del Préstamo mercantil podrá realizar pagos anticipados al monto del capital adeudado, siempre y cuando cumpla con lo establecido en el contrato de Préstamo mercantil sin penalización alguna, en cuyo caso el pago realizado, se acreditará en la cuenta virtual de EL COMITENTE en la parte que le corresponda de dicho pago, sin que le corresponda pago de intereses ordinarios por el monto del capital prepagado.
+                 
+                NOVENA.- Comisión por recuperación de cartera vencida.- EL COMITENTE pagará a RENDDY una comisión por recuperación de la cartera vencida, misma que será del 10% (diez por ciento) del monto total recuperado.
+                Esta comisión se generará cuando hubieren transcurrido 90 (noventa) días naturales contados a partir de la fecha de vencimiento de una amortización, sin que el Deudor del Préstamo Mercantil hubiere cubierto completamente el pago de la misma, sus intereses ordinarios, los intereses moratorios, así como los gastos de cobranzas que se hubieren generado, además del Impuesto al Valor Agregado Correspondiente para cada caso concreto.
+                 
+                DÉCIMA.- Contraprestación.- EL COMITENTE retribuirá a RENDDY por el monto de sus servicios de la siguiente manera:
+                1.    Del total de las cantidades cobradas al Deudor del Préstamo mercantil y efectivamente pagadas a EL COMITENTE, RENDDY tendrá derecho a cobrar un porcentaje equivalente al 1% (uno por ciento), por concepto de sus servicios, conviniendo expresamente las partes que al momento de que EL COMITENTE haga del conocimiento de RENDDY cada instrucción expresa para la celebración de un contrato de Préstamo mercantil, se establecerá este monto de la contraprestación a que tendrá derecho a cobrar RENDDY.
+                2.    El 10% (diez por ciento) del monto total recuperado cuando un Préstamo mercantil hubiere caído en cartera vencida de conformidad con lo establecido en la cláusula novena del presente contrato.
+                3.    El 10% (diez por ciento) del monto total recuperado cuando un Préstamo mercantil se hubiere cobrado por haber dado el mismo en factoraje, haberlo vendido o cedido los derechos de cobro.
+                A dichas cantidades deberá de adicionarse el correspondiente Impuesto al Valor Agregado que se genere.
+                 
+                DÉCIMA PRIMERA.- Obligaciones fiscales y licitud de los recursos.- Con el fin de evitar cualquier tema de operaciones con recursos de procedencia ilícita, LAS PARTES acuerdan que toda operación derivada del presente contrato, deberá ser realizada por medio de transferencias electrónicas, depósitos bancarios y pagos con tarjetas de crédito o débito de tal forma que las mismas se encuentren debidamente registradas en la banca nacional.
+                 
+                EL COMITENTE declara y garantiza que cumplirá con todas las obligaciones fiscales que le resulten aplicables por virtud de las comisión mercantil encomendada a RENDDY por medio del presente contrato, así como que los recursos económicos utilizados para el cumplimiento del presente contrato provienen y provendrán en todo momento de fuentes lícitas y los mismos siempre serán utilizados para actividades lícitas, quedando además obligado EL COMITENTE a indemnizar y sacar en paz y a salvo a RENDDY de cualquier controversia, demanda o procedimiento administrativo o judicial de cualquier índole que el incumplimiento de esta cláusula le llegara a generar.
+                 
+                DÉCIMA SEGUNDA.- Vigencia del contrato.- El presente contrato se celebra por tiempo indefinido.
+                RENDDY, podrá dar por terminado el presente contrato, previo aviso dado a EL COMITENTE con cinco días de anticipación, cuando la totalidad de los recursos de la cuenta virtual de EL COMITENTE se encuentren en estatus de "Recursos disponibles para prestar o ser retirados".
+                EL COMITENTE, podrá dar por terminado el presente contrato, previo aviso dado a RENDDY con cinco días de anticipación, cuando la totalidad de los recursos de la cuenta virtual de EL COMITENTE se encuentren en estatus de "Recursos disponibles para prestar o ser retirados" y quiera concluir con el mismo.
+                 
+                DÉCIMA TERCERA.- Modificaciones al contrato.- El presente contrato no podrá ser modificado sino mediante el consentimiento expreso y por escrito de LAS PARTES.
+                 
+                DÉCIMA CUARTA.- Domicilios, Comunicaciones y Notificaciones.- Para todos los efectos del presente contrato, LAS PARTES señalan como sus domicilios, números telefónicos y correos electrónicos donde deben ser notificados de cualquier comunicación, los indicados en el capítulo de declaraciones de este instrumento.
+                LAS PARTES podrán cambiar los domicilios, números telefónicos y correos electrónicos, establecidos en el presente contrato, dando aviso a la otra parte por escrito, dichas comunicaciones podrán ser enviadas a través de correo electrónico.
+                Mientras LAS PARTES no se notifiquen el cambio de sus domicilios, números telefónicos y correos electrónicos, comunicaciones y notificaciones se realizarán a través de los mismos, surtiendo las mismas plenos efectos.
+                Las notificaciones y todas las diligencias judiciales y extrajudiciales se practicarán y surtirán plenamente sus efectos en los domicilios señalados en el presente contrato.
+                 
+                DÉCIMA QUINTA.- Confidencialidad y tratamiento de Datos Personales.- EL COMITENTE acepta al momento de la celebración del presente contrato, que sus datos personales serán tratados por RENDDY, en los términos establecidos en el Aviso de Privacidad que se encuentra en la página web de este último.
+                RENDDY tendrá en todo momento el derecho de modificar los términos de su política de tratamiento de datos personales.
+                La sola publicación en la página web de RENDDY del Aviso de Privacidad, con los nuevos términos y condiciones, será medio suficiente para informar a EL COMITENTE de las modificaciones a su política de tratamiento de datos personales, entrando la misma en vigor automáticamente.
+                 
+                DÉCIMA SEXTA.- Jurisdicción y Competencia.- El presente contrato es de naturaleza mercantil, por lo que el mismo está sujeto para su interpretación, ejecución y cumplimiento a las Leyes Mercantiles de los Estados Unidos Mexicanos, sometiéndose expresamente LAS PARTES a la jurisdicción y competencia de los tribunales competentes de la Ciudad de Guadalajara, Jalisco, renunciando a cualquier otro fuero que por razón de sus domicilios presentes o futuros o por cualquier otra causa pudiera corresponderles.
+                 
+                DÉCIMA SÉPTIMA.- Manifestación de la voluntad.- De conformidad con lo establecido en los artículos 80 y 90 del Código de Comercio, y el 1803 del Código Civil Federal, LAS PARTES acuerdan que EL COMITENTE manifiesta en forma expresa su voluntad para celebrar el presente contrato, al momento de dar clic en el recuadro de aceptar contrato que aparece en la página web de RENDDY, identificada en la declaración I de este contrato, realizando además una aceptación tácita del mismo con el primer depósito de recursos realizado en la cuenta bancaria de RENDDY; siendo el caso que RENDDY manifiesta expresamente su voluntad para celebrar el presente contrato, al momento de establecer en su página web las condiciones del presente contrato, realizando además una aceptación tácita del mismo con la recepción de los recursos en su cuenta bancaria.
+                Por lo que el presente contrato, junto con la transferencia de recursos realizada por EL COMITENTE a la cuenta bancaria de RENDDY, serán prueba suficiente y plena de la realización, aceptación y fecha de celebración del mismo.
+                 
+                En la Ciudad de Guadalajara, Estado Jalisco, a 19 días del mes de Abril de 2021.
+                
+            </div>
+            <div class="w-full mt-2 flex justify-between items-end">
+                <div>
+                    <button class="p-2 border border-gray-300 rounded">Imprimir</button>
+                </div>
+                <div class="flex items-end">
+                        <div >
+                        <label class="tracking-wide text-gray-700 text-sm font-bold mb-2" for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" class="appearance-none w-full bg-gray-50 text-gray-700 border border-gray-200 rounded  px-4  leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60">
+                        </div>
+                        <div class="mx-2">
+                            <a href="index.html">
+                                <button class="text-white bg-blue-600 rounded p-2">Firmar y continuar</button>
+                            </a>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
+</div>
+</body>
+</html>

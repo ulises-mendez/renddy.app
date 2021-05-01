@@ -98,3 +98,34 @@ input:checked ~ .tab-content {
   opacity: 0;
   z-index: -1;
 }
+
+input[type="checkbox"]:checked + .tab-label::after {
+  transform: rotate(180deg);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0icm90YXRlLTAgaC02IHctNiB0cmFuc2Zvcm0gY2hldnJvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iIzgwODA4MCIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE5IDlsLTcgNy03LTciIC8+CiAgICAgICAgICA8L3N2Zz4=")
+}
+
+input[type="checkbox"]:checked ~ .tab-content {
+max-height: 100vh;
+padding: 1em;
+}
+.accordion{
+position: absolute;
+opacity: 0;
+z-index: -1;
+}
+
+#empleado:checked ~ #check-empleado,#prestador:checked ~ #check-prestador,
+#empresario:checked ~ #check-empresario, #otro:checked ~ #check-otro,
+#industrial:checked ~ #check-industrial, #comercio:checked ~ #check-comercio,
+#agropecuario:checked ~ #check-agropecuario,#gobierno:checked ~ #check-gobierno,
+#min5:checked ~ #check-min5,#min10:checked ~ #check-min10,
+#extra:checked ~ #check-extra,
+#max10:checked ~ #check-10mil,#max50:checked ~ #check-50mil,
+#max100:checked ~ #check-100mil,#max:checked ~ #check-max,
+#sueldo:checked ~ #check-sueldo,#negocio:checked ~ #check-negocio,
+#herencia:checked ~ #check-herencia,#donacion:checked ~ #check-donacion, #otros:checked ~ #check-otros,
+#ahorro:checked ~ #check-ahorro,#retiro:checked ~ #check-retiro,
+#adquisicion:checked ~ #check-adquisicion,#otrosfines:checked ~ #check-otrosfines{
+background-color:#006EFF;
+color:white;
+}
