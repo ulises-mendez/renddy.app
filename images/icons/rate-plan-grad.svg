@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006EFF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:url(#SVGID_1_);stroke-miterlimit:10;}
+</style>
+<g>
+	<ellipse class="st0" cx="28.9" cy="26.7" rx="2.7" ry="2.7"/>
+	<ellipse class="st0" cx="20.2" cy="20.8" rx="2.7" ry="2.7"/>
+	<line class="st0" x1="28" y1="17.9" x2="21.1" y2="30.7"/>
+</g>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.6" y1="29.95" x2="58.2108" y2="29.95">
+	<stop  offset="0" style="stop-color:#006EFF"/>
+	<stop  offset="1" style="stop-color:#00F0AB"/>
+</linearGradient>
+<path class="st1" d="M43.4,15.4h-6.3V9.3 M45.8,24.5v-9.3l-8.7-8.7H12c-1,0-1.9,0.8-1.9,1.9v6.7v33.8v2.6c0,1,0.8,1.9,1.9,1.9h31.9
+	c1,0,1.9-0.8,1.9-1.9V41.2 M15.4,46h11.9 M33,40l-2.6,6.5l7.5-2.9L57.5,24l-4.9-4.8L33,40z M48.5,23.3l3.8,3.8"/>
+</svg>
