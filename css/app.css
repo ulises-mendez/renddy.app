@@ -24668,7 +24668,7 @@ select {
 
 .text-blue-500 {
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgba(0, 110, 255, var(--tw-text-opacity));
 }
 
 .text-blue-600 {
