@@ -110,45 +110,35 @@
  
 <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
   <div class="container mx-auto max-w-screen-sm ">
-  <div  class="full mx-auto">
-    <div class="form w-full bg-white p-5 shadow-lg">
-      <!-- CAMBIAR MÉTODO -->
-      <!-- <form id="name"   class="w-full"> -->
-        <div class="w-full my-2">
-            <h1 class="text-xl text-gray-600">¿Cómo te llamas?</h1>
-                <p class="text-sm text-gray-500">Como aparece tu nombre en tu identificación oficial (INE, pasaporte, residencia permanente o temporal)</p>
-            </div>
-          <div class="w-full my-2">
-            <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" >
-                    Primer nombre
-            </label>
-            <input type="text" id="primerNombre" name="primerNombre" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" >
-          </div>
-          <div class="w-full my-2">
-            <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" >
-                        Segundo nombre
-            </label>
-            <input type="text" id="segundoNombre" name="segundoNombre" minlength="2"   class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" >
-          </div>
-                <div class="w-full my-2">
-                    <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" for="amount">
-                        Apellido paterno</label>
-                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" type="text" id="apellidoPaterno" name="apellidoPaterno">
-                </div>
-                <div class="w-full my-2">
-                    <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" for="amount">
-                        Apellido materno</label>
-                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" type="text" id="apellidoMaterno" name="apellidoMaterno">
-                </div>
-                
-                <div class="flex items-center justify-end mt-4">
-                  <button id="paso1" onclick="showForm(1)" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
-            Guardar y continuar
-</button>
-          </div>
-      </div>
+    <!-- CAMBIAR MÉTODO -->
+    <form id="data"   class="w-full">
+    <div  class="full mx-auto">
+<!-- NOMBRE-->
+<div class="form w-full bg-white p-5 shadow-lg">
+  <div class="w-full my-2">
+    <h1 class="text-xl text-gray-600">¿Cómo te llamas?</h1>
+    <p class="text-sm text-gray-500">Como aparece tu nombre en tu identificación oficial (INE, pasaporte, residencia permanente o temporal)</p>
   </div>
-
+  <div class="w-full my-2">
+    <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" >Primer nombre</label>
+    <input type="text" id="primerNombre" name="primerNombre" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" >
+  </div>
+  <div class="w-full my-2">
+        <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" >Segundo nombre</label>
+            <input type="text" id="segundoNombre" name="segundoNombre" minlength="2"   class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" >
+        </div>
+        <div class="w-full my-2">
+          <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" for="amount">Apellido paterno</label>
+          <input type="text" id="apellidoPaterno" name="apellidoPaterno" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" type="text" id="apellidoPaterno" name="apellidoPaterno">
+        </div>
+        <div class="w-full my-2">
+          <label class="block tracking-wide text-gray-700 text-sm font-bold my-4" for="amount">Apellido materno</label>
+          <input type="text" id="apellidoMaterno" name="apellidoMaterno" minlength="2" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300	 focus:ring focus:ring-green-200 focus:ring-opacity-60" type="text" id="apellidoMaterno" name="apellidoMaterno">
+        </div>
+        <div class="flex items-center justify-end mt-4">
+          <button class="step bg-blue-600 text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">Guardar y continuar</button>
+  </div>
+</div>
 <!-- NACIMIENTO-->
 <div class="form w-full bg-white p-5 my-8">
   <div  class="w-full">
@@ -356,9 +346,7 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-          <button id="paso2"  onclick="showForm(2)" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
-    Guardar y continuar
-</button>
+          <button class="step bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">Guardar y continuar</button>
       </div>
   </div>
 </div>
@@ -380,9 +368,7 @@
                 </select>
             </div>
             <div class="flex items-center justify-end mt-4">
-                <button id="paso3"  onclick="showForm(3)" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
-    Guardar y continuar
-</button>
+                <button class="step bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">Guardar y continuar</button>
             </div>
 
         </div>
@@ -412,9 +398,7 @@
               </div>
           </div>
           <div class="flex items-center justify-end mt-4">
-              <button id="paso4" onclick="showForm(4)" class="bg-blue-600 text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
-    Guardar y continuar
-</button>
+              <button class="step bg-blue-600 text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">Guardar y continuar</button>
           </div>
 
       </div>
@@ -471,9 +455,7 @@
                 </div>
           </div>
           <div class="flex items-center justify-end mt-4">
-              <button id="paso5"  onclick="showForm(5)" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
-    Guardar y continuar
-</button>
+              <button  class="step bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">Guardar y continuar</button>
           </div>
       </div>
     </div>
@@ -579,7 +561,7 @@
             <textarea class="w-full" name="reason" id="razon" rows="4"> </textarea>
           </div>
           <div class="flex items-center justify-end mt-4">
-              <button id="paso6"  onclick="getValues()" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
+              <button  onclick="getValues()" class="bg-blue-600  text-white font-bold px-2 py-2 rounded hover:shadow-xl transition duration-200 ml-3">
     Guardar y continuar
 </button>
           </div>
@@ -637,7 +619,7 @@
         </svg>
         <p class="text-xs"> Todos tus datos estan protegidos y cifrados por SSL.</p>
 </div>
-<!-- </form>-->
+</form>
 
 </div>
 </div>
@@ -648,7 +630,10 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 <script>
 
+
+$().ready(function() {
   //var forms = document.getElementsByClassName("container");
+  var form = $("#data")
   var forms = $(".form")
   var iForm =  0;
   var primerNombre = $("#primerNombre");
@@ -713,9 +698,9 @@
 		}
 	});
 
-  $().ready(function() {
+
     //id names
-    $("#name").validate({
+    form.validate({
         messages:{
           primerNombre: {
             required: "Registra tu nombre",
@@ -725,69 +710,28 @@
             minlength: "Tu nombre debe tener al menos 2 letras"
           },
           apellidoPaterno: {
+            required: "Registra tu Apellido Paterno",
             minlength: "Tu nombre debe tener al menos 2 letras"
           },
           apellidoMaterno: {
+            required: "Registra tu Apellido Materno",
             minlength: "Tu nombre debe tener al menos 2 letras"
           }
         }
 
     });
-  /*
-	$().ready(function() {
-		// validate the comment form when it is submitted
-		$("#commentForm").validate();
 
-		// validate signup form on keyup and submit 
-		$("#signupForm").validate({
-			rules: {
-				firstname: "required",
-				lastname: "required",
-				username: {
-					required: true,
-					minlength: 2
-				},
-				password: {
-					required: true,
-					minlength: 5
-				},
-				confirm_password: {
-					required: true,
-					minlength: 5,
-					equalTo: "#password"
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				topic: {
-					required: "#newsletter:checked",
-					minlength: 2
-				},
-				agree: "required"
-			},
-			messages: {
-				firstname: "Please enter your firstname",
-				lastname: "Please enter your lastname",
-				username: {
-					required: "Please enter a username",
-					minlength: "Your username must consist of at least 2 characters"
-				},
-				password: {
-					required: "Please provide a password",
-					minlength: "Your password must be at least 5 characters long"
-				},
-				confirm_password: {
-					required: "Please provide a password",
-					minlength: "Your password must be at least 5 characters long",
-					equalTo: "Please enter the same password as above"
-				},
-				email: "Please enter a valid email address",
-				agree: "Please accept our policy",
-				topic: "Please select at least 2 topics"
-			}
-		});*/
+    $(".step").click(function(){
+      if(form.valid() == true){
+        showForm(iForm+1);
+      }
+      if(form.valid() == false){
+        null
+      }
+      console.log(form.valid())
+    })
 	});
+
 
 </script>
 </body>
