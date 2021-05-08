@@ -1,32 +1,26 @@
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="hmzxJZr6Z7NzIzWGUyYdzs0awdv1FJtBtGFdk1GI">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Registro | renddy.com </title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <style>
-            .body-bg {
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ingresa a tu cuenta </title>
+	<meta name="author" content="David Grzyb">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .body-bg {
                 background-color: #4d8ec1;
                 background-image: linear-gradient(315deg, #00F0AB 0%, #006EFF 74%);
-            }
-        </style>
-        <!-- Scripts -->
-        
-    </head>
-    <body>
-        <div class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0" style="font-family:'Karla',sans-serif;">
-            <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">    <div>
-        <a href="index.html">
+        }
+    </style>
+</head>
+<body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0" style="font-family:'Karla',sans-serif;">
+
+    <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+        <a href="/">
             <svg viewBox="0 0 900 335.6" xmlns="http://www.w3.org/2000/svg" class="w-32 fill-current text-gray-500 my-3">
         <style type="text/css">
             .st0{fill:url(#SVGID_1_);}
@@ -65,60 +59,42 @@
             L788.3,263.7z"/>
         </svg>        </a>
         <section>
-            <h3 class="text-2xl">Crea una cuenta</h3>
-            <p class="text-gray-600 pt-2">Únete a nuestra comunidad de inversionistas</p>
+            <h3 class="font-bold text-2xl">Bienvenido</h3>
+            <p class="text-gray-600 pt-2">Ingresa a tu cuenta en renddy.com</p>
         </section>
-
-
-        <!-- Validation Errors -->
+        <!-- Session Status -->
         
-        <form method="POST" action="http://localhost/register">
-            <input type="hidden" name="_token" value="hmzxJZr6Z7NzIzWGUyYdzs0awdv1FJtBtGFdk1GI">
+        
+        <!-- Validation Errors -->
+                <section class="mt-10">
+            <form class="flex flex-col" method="POST" action="http://localhost/login">
+                <input type="hidden" name="_token" value="BWSjkblWxZHzDDgeVQ0n50q19dBxUKCWwfGo95yP">   
+                <div class="w-full my-2">
+                    <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                    <input type="email" name="email" :value="old('email')" required autofocus class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60">
+                </div>
+                <div class="w-full my-2">
+                    <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60">
+                </div>
+                <div class="flex justify-end">
+                                        <a class="text-sm text-gray-500 hover:text-gray-800 hover:underline mb-6" href="index.html">
+                        Olvide mi contraseña
+                    </a>    
+                                </div>
+                <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit">Ingresar</button>
+            </form>
+        </section>
+    </main>
 
-            <!-- Email Address -->
-            <div class="mt-4">
-                <label class="block tracking-wide text-gray-700 text-sm mb-2" for="email">
-    Email:
-</label>
+    <div class="max-w-lg mx-auto text-center mt-12 mb-6">
+        <p class="text-white">¿Aún no tienes una cuenta? <a href="register.html" class="font-bold hover:underline">Crear una cuenta</a>.</p>
+    </div>
 
-                <input  class="appearance-none bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60 block mt-1 w-full" id="email" type="email" name="email" required="required">
-            </div>
-
-
-
-            <!-- Password -->
-            <div class="mt-4">
-                <label class="block tracking-wide text-gray-700 text-sm mb-2" for="password">
-    Contraseña:
-</label>
-
-                <input  class="appearance-none bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60 block mt-1 w-full" id="password" type="password" name="password" required="required" autocomplete="new-password">
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <label class="block tracking-wide text-gray-700 text-sm mb-2" for="password_confirmation">
-    Confirmar Contraseña:
-</label>
-
-                <input  class="appearance-none bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-blue-300 focus:ring focus:ring-green-200 focus:ring-opacity-60 block mt-1 w-full" id="password_confirmation" type="password" name="password_confirmation" required="required">
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <button type="submit" class="bg-green-400 hover:bg-green-500 text-white px-4 py-4 rounded shadow-lg hover:shadow-xl transition duration-200 ml-4">
-    Registrarme
-</button>
-            </div>
-            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="login.html">
-                ¿Ya tienes una cuenta?
-            </a>
-        </form>
-</main>
-<footer class="max-w-lg mx-auto flex justify-center text-white">
-    <a href="contacto.html" class="hover:underline">Contacto</a>
-    <span class="mx-3">•</span>
-    <a href="privacidad.html" class="hover:underline">Privacidad</a>
-</footer>
-        </div>
-    </body>
+    <footer class="max-w-lg mx-auto flex justify-center text-white">
+        <a href="#" class="hover:underline">Contacto</a>
+        <span class="mx-3">•</span>
+        <a href="#" class="hover:underline">Privacidad</a>
+    </footer>
+</body>
 </html>

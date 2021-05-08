@@ -22,7 +22,7 @@
     <title>Préstamos e inversiones personales | mensapi.com</title>
 </head>
 <body>
-    <nav class="flex items-center justify-between justify-items-stretch flex-wrap bg-teal-500 p-6">
+<nav class="flex items-center justify-between justify-items-stretch flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
         <a href="https://ulises-mendez.github.io/renddy.app/">
         <svg viewBox="0 0 900 335.6" xmlns="http://www.w3.org/2000/svg" width="125px">
@@ -70,59 +70,99 @@
     </div>
     <div class="flex justify-end ">
       <div class="mx-auto text-sm">
-        <a href="solicitar-prestamo.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+        <a href="solicitar-prestamo.html" class="font-bold block bg-blue-600 rounded-full p-4 text-white mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">
         Quiero un préstamo
       </a>
       </div>
       <div class="mx-auto text-sm ">
-        <a href="inversion.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+        <a href="inversion.html" class="font-bold block bg-blue-600 rounded-full p-4 text-white mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">
         Quiero invertir
         </a>
       </div>
       
                   <div class="mx-auto text-sm">
-          <a href="http://localhost/login" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">
+          <a href="login.html" class="font-bold block bg-blue-600 rounded-full p-4 text-white mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">
             Iniciar sesión
           </a>
       </div>
                 <div class="mx-auto text-sm">
-              <a href="register.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-400 mr-4">Registrarme</a>
+              <a href="register.html" class="font-bold block bg-blue-600 rounded-full p-4 text-white mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">Registrarme</a>
       </div>
                     </div>
 </nav>
-<div class="hero" style="height: 100%">
-  <div class="container m-auto flex flex-row flex-wrap justify-between items-center" style="height: 500px">
+<div class="hero relative" style="height: 100%" >
+  <div class="w-full absolute" style="z-index:9;left:0;bottom:-1px">
+      <img src="images/wave.svg" alt="wave">
+      </div>
+  <div class="container m-auto  pt-28" style="height: 700px">
+      <div class="flex flex-row flex-wrap justify-between items-center">
           <div class="w-full px-4 my-4 md:w-1/2 text-center">
               <div class="w-full text-center">
-                  <img src="images/financiera-online.svg" alt="renddy financiera online" class="w-80 m-auto">
+                  <img src="images/financiera-online.svg" alt="renddy financiera online" class="w-80 m-auto mb-16">
               </div>
-              <div class="my-8 flex w-full">
-              <div class="w-1/2 relative">
-                      <a href="solicitar-prestamo.html">
-                          <button id="financiarme-btn" class="w-full bg-blue-300 text-shadow  text-lg bg-gradient-to-b from-blue-300 to-blue-600 border-b-4 border-blue-800  text-white font-bold p-4 rounded shadow-lg transition duration-100 hover:shadow-xl hover:from-blue-400 hover:to-blue-800 hover:border-b-2 ">
-                              FINANCIARME </button>
-                      </a>
-              </div>
-              <div class="w-1/2 relative">
-                  
-              <a href="inversion.html">
-              <button class='w-full bg-green-300 text-lg text-shadow  bg-gradient-to-b from-green-300 to-green-600  border-b-4 border-green-800 text-white font-bold p-4 rounded shadow-lg hover:shadow-xl transition duration-100 mx-4 hover:from-green-400 hover:to-green-800 hover:border-b-8'>
-                  INVERTIR </button>
-
-          </div>
-              </div>
-              </a>
           </div>
           <div class="w-full px-4 my-4 md:w-1/2 text-center md:text-right text-white text-shadow">
-              <span class="text-xl md:text-3xl  lg:text-5xl font-extrabold tracking-wide">
-                  INVERSIONES <span class="text-2xl md:text-md lg:text-3xl mx-4 mr-0">  Y</span> <br>
-                  FINANCIAMIENTOS <br></span>
-              <span class="text-xl md:text-2xl  lg:text-5xl font-bold">PERSONALES Y EMPRESARIALES</span>
+              <p class="text-xl md:text-3xl  lg:text-6xl font-extrabold tracking-wide">
+                  INVIERTE EN EMPRESAS </p>
+              <p class="text-xl md:text-xl  lg:text-5xl font-extrabold tracking-wide">
+                  Y PROYECTOS RENTABLES </p>
+              <p class="text-xl md:text-md  lg:text-3xl font-extrabold tracking-wide">
+                  CON EXCELENTE HISTORIAL CREDITICIO </p>
           </div>
+      </div>
+          <div class="container flex">
+              <div class="w-1/2">
+                  <div class="w-1/2 my-4 m-auto">
+                      <a href="/inversion">
+                      <button class='w-full bg-green-300 text-lg text-shadow rounded-full bg-gradient-to-b from-green-300 to-green-600  border-b-4 border-green-800 text-white font-bold p-4 rounded shadow-lg hover:shadow-xl transition duration-100 hover:from-green-400 hover:to-green-800 hover:border-b-8'>
+                          INVERTIR </button>
+                      </a>
+                      </div>
+                  <div class="w-1/2 my-4 m-auto">
+                  <a href="/solicitar-prestamo">
+                  <button id="financiarme-btn" class="w-full bg-blue-300 text-shadow rounded-full text-lg bg-gradient-to-b from-blue-300 to-blue-600 border-b-4 border-blue-800  text-white font-bold p-4 rounded shadow-lg transition duration-100 hover:shadow-xl hover:from-blue-400 hover:to-blue-800 hover:border-b-2 ">
+                      FINANCIARME </button>
+                  </a>
+                  </div>
+              </div>
+              <div class="w-1/2">
+                  <form id="sub" class="w-full px-4 my-4  text-center  text-white text-shadow">
+                      <h2 class="text-lg md:text-md  lg:text-xl font-bold tracking-wide">
+                  SUBSCRÍBETE A RENDDY.COM </h2>
+
+                      <input type="text" class="text-blue-500 w-2/3 my-2 bg-white m-auto rounded-full text-center border border-blue-300" placeholder="CORREO ELECTRÓNICO">
+                      
+                      <div class="w-auto flex justify-center items-center my-2">
+                          
+                          <p class="mx-1">Acepto recibir correos de renddy.com</p>
+                          <input type="checkbox" name="condition" class="mx-2">
+                          <a class="underline text-white font-bold" href="terminos-y-condiciones.html" target="_blank"> términos y condiciones</a>
+                      </div>
+                      <div class="w-full text-center">
+                          <button class="w-1/3 bg-gradient-to-b from-green-400 to-green-500 rounded-full ml-4 p-2 shadow-lg" style="z-index: 999;">Registrarme</button>
+                      </div>
+                      
+                  </form>
+              </div>
+          </div>
+  </div>
   </div>
 </div>
 <section>
-  <div class="-mt-20 container m-auto bg-white bg-opacity- rounded">
+  <div class="w-full my-6 text-center">
+      <h1 class="text-5xl text-blue-500 font-black"> ¿CONOCES RENDDY.COM?</h1>
+  </div>
+</section>
+<section>
+  <div class="container m-auto my-10 text-center text-md">
+      <p class="my-4">
+          <b>Renddy,</b> es una financiera online donde podrás invertir desde mil pesos en proyectos y empresas rentables con excelente historial crediticio, aprobadas por nuestro equipo de expertos.
+      </p>
+
+  </div>
+</section>
+<section>
+  <div class="mt-28 container m-auto bg-white bg-opacity- rounded">
   <div class="px-6 py-6 rounded-sm shadow-lg xl:px-12 bg-background">
       <div class="flex flex-wrap -mx-4"><div class="w-full px-4">
       <ul class="flex flex-col flex-wrap justify-between -mx-4 text-lg font-medium md:flex-row">
@@ -140,9 +180,9 @@
               <div>
               <div class="pl-4 text-center">
               <h3 class="text-xl mb-2 text-blue-500 leading-5 text-center font-bold">
-                  Tasas del 16%
+                  Rendimiento desde 15%
               </h3>
-              <p class="font-normal text-txtLight">Tasa anual competitiva</p>
+              <p class="font-normal text-txtLight">Tasa fija anual</p>
               </div>
               </div>
           </li>
@@ -150,22 +190,16 @@
               <div>
               <div class="pl-4 text-center">
               <h3 class="text-xl mb-2 text-blue-500 leading-5 text-center font-bold">
-              Hazlo desde casa
+                  Sólo necesitas tu identificación oficial
               </h3>
-              <p class="font-normal text-txtLight">Fácil y sin filas.</p>
+              <p class="font-normal text-txtLight">Y una cuenta bancaria.</p>
               </div>
               </div>
           </li>
 </ul>
 </div></div></div></div>
   </section>
-  <section>
-      <div class="container m-auto my-10">
-          <p class="my-4">
-              <b>Renddy,</b>  es una financiera online donde podrás invertir en proyectos empresariales.
-          </p>
-      </div>
-  </section>
+
 
   <section>
       
@@ -191,404 +225,379 @@
   </section>
 
 
-  <section>
-  <!--- ROW 1  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/inversion-grad.svg" class="w-20 h-20 m-auto " alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Invierte a partir de $1,000.00 pesos m.x.n.
-                      </p>
+<section>
+      <!--- ROW 1  -->
+      <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/inversion-grad.svg" class="w-20 h-20 m-auto " alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                      <p class="font-bold ">Empieza a invertir</p>
+                          <p class="font-normal text-lg text-txtLight">
+                              a partir de $1,000.00 pesos mxn.
+                          </p>
+                  </div>
               </div>
           </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/rate-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
           </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Tasa anual desde 18% hasta el 20.4% menos impuestos.
-                      </p>
-                      <p class="font-normal text-lg text-txtLight">
-                      Según el plan que escogas
-                      </p>
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/rate-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
               </div>
-          </div>
-      </div>
-      </div>
-  </div>
-  <!--- ROW 2  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/rate-plan-grad.svg" class="w-20 h-20 m-auto " alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Rendimientos a inversionistas mensuales o anuales*
-                      </p>
-                      <p class="font-normal text-lg text-txtLight">
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                      <p class="font-bold ">
+                              Tasa anual desde 15% hasta el 16.07%.
+                          </p>
+                          <p class="font-normal text-lg text-txtLight">
                           Según el plan que escogas
-                      </p>
+                          </p>
+                  </div>
               </div>
           </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/month-rate-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
           </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Rendimiento mensual equivalente desde 1.5% hasta el 1.7%
-                      </p>
-                      <p class="font-normal text-lg text-txtLight">
-                      Según el plan que escogas
-                      </p>
+      </div>
+      <!--- ROW 2  -->
+      <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/month-rate-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                          <p class="font-bold ">Paquete rendimiento mensual</p>
+                          <p class="font-normal text-lg text-txtLight">
+                              equivalente a 1.25% (GAT 15%)
+                          </p>
+                  </div>
               </div>
           </div>
-      </div>
-      </div>
-  </div>
-  <!--- ROW 3  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/month-grad.svg" class="w-20 h-20 m-auto " alt="">
           </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Gana más mes a mes con opción a reinversión
-                      </p>
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/month-rate-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
               </div>
-          </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/rate-plan-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Usa tus rendimientos para tus pagos mensuales sin descapitalizarte
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-  </div>
-  <!--- ROW 3  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/clabe-grad.svg" class="w-20 h-20 m-auto " alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Recibe tus rendimientos mes a mes directo en tu cuenta clabe
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/earns-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Ganas a partir del primer día
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-  </div>
-  <!--- ROW 4  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/easy-transparent-grad.svg" class="w-20 h-20 m-auto " alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Proceso fáciles y transparentes
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/protection-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Protección de datos personales
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-  </div>
-  <!--- ROW 5  -->
-  <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/contract-grad.svg" class="w-20 h-20 m-auto " alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Contrato desde 12 hasta 36 meses
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-      <div class="w-full md:w-1/2 p-4">
-      <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
-          <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
-              <img src="images/icons/cancel-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
-          </div>
-          <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
-              <div class="m-auto text-center">
-                      <p class="font-normal text-lg text-txtLight">
-                          Cancelación de contrato sin penalización
-                      </p>
-              </div>
-          </div>
-      </div>
-      </div>
-  </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                      <p class="font-bold ">Paquete rendimiento anual</p>
+                          <p class="font-normal text-lg text-txtLight">
+                              equivalente a 16.07%
+                          </p>
 
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!--- ROW 3  -->
+      <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/month-grad.svg" class="w-20 h-20 m-auto " alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                          <p class="font-bold ">Obten tus rendimientos los primeros días del mes</p>
+                          <p class="font-normal text-lg text-txtLight">
+                              con opción a re-inversión
+                          </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/rate-plan-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                      <p class="font-bold ">Usa tus rendimientos para tus pagos mensuales</p>
+                          <p class="font-normal text-lg text-txtLight">
+                               sin descapitalizarte
+                          </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!--- ROW 3  -->
+      <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full h-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/clabe-grad.svg" class="w-20 h-20 m-auto " alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                          <p class="font-normal text-lg text-txtLight">
+                              <b>Recibe tus rendimientos mes a mes</b> directo en tu cuenta bancaria
+                          </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/earns-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                          <p class="font-bold">Genera rendimientos</p>
+                          <p class="font-normal text-lg text-txtLight">
+                              a partir del primer día
+                          </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!--- ROW 4  -->
+      <div class="max-w-screen-xl m-auto flex flex-col flex-wrap text-lg font-medium md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+              <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+                  <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                      <img src="images/icons/cancel-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
+                  </div>
+                  <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                      <div class="m-auto text-center">
+                          <p class="font-bold">Cancelación de contrato</p>
+                              <p class="font-normal text-lg text-txtLight">
+                                   sin penalización
+                              </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full md:w-1/2 p-4">
+          <div class="w-full flex flex-wrap max-w-screen-md p-6 bg-white rounded shadow-lg content-center">
+              <div class="w-full h-full px-4 my-2 md:w-1/3 text-center">
+                  <img src="images/icons/protection-grad.svg" class="w-20 h-20 m-auto my-6" alt="">
+              </div>
+              <div class="w-full px-4 my-2 md:w-2/3 flex content-center">
+                  <div class="m-auto text-center">
+                          <p class="font-bold">Protección</p>
+                          <p class="font-normal text-lg text-txtLight">
+                               de datos personales
+                          </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!--- ROW 5  -->      
   
-
-      <div class="w-full m-auto max-w-screen-sm text-center">
-          <a href="">
-              <button class="w-full bg-green-500 text-white p-2 rounded shadow-lg my-8">Crear cuenta de inversión</button>
-          </a>
-      </div>
-  
-  <div class="bg-gray-50">
-      <div class="max-w-screen-xl m-auto pb-4">
-          <div class="w-full pt-6">
-              <h2 class="text-5xl text-blue-500 font-bold text-center"> Sigamos conectados</h2>
-              <p class="text-lg text-blue-500 text-center my-4">Suscríbete a nuestro boletín y entérate a tiempo de las novedades.</p>
-          </div>
-          <form>
-          <div class="w-full flex">
-              <div class="w-full md:w-1/2 m-4">
-                  <input type="text" class="w-full bg-white rounded-full p-4" placeholder="Ingresa tu nombre"> </input>
-              </div>
-              <div class="w-full md:w-1/2 m-4">
-                  <input type="email" class="w-full bg-white rounded-full p-4" placeholder="Ingresa tu email"> </input>
-              </div>
-          </div>
-          <div class="m-auto w-full max-w-screen-md flex">
-              <div class="w-6">
-              <input type="checkbox" name="condition">
-              </div>
-              <div class="w-auto flex">
-                  <p class="mr-1">Acepto recibir correos de Financiera Renddy de acuerdo con los siguientes </p>
-                  <a class="underline text-blue-500" href="terminos-y-condiciones.html" target="_blank"> términos y condiciones</a>
-              </div>
-          </div>
-          <button class="bg-green-500 m-auto flex items-center text-white p-4 my-4 "><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="white">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg> INSCRÍBETE</button>
-          </form>
-      </div>
-  </div>
-
-  </section>
     
+          <div class="w-full m-auto max-w-screen-sm text-center">
+              <a href="">
+                  <button class="w-full bg-green-500 text-white p-2 rounded shadow-lg my-8">Crear una cuenta de inversión</button>
+              </a>
+          </div>
+          <div class="w-full m-auto max-w-screen-sm text-center">
+              <a href="">
+                  <button class="w-full bg-blue-600 text-white p-2 rounded shadow-lg my-8">Solictar financiamiento </button>
+              </a>
+          </div>
+      
+      <div class="bg-gray-50">
+          <div class="max-w-screen-xl m-auto pb-4">
+              <div class="w-full pt-6">
+                  <h2 class="text-5xl text-blue-500 font-bold text-center"> Sigamos conectados</h2>
+                  <p class="text-lg text-blue-500 text-center my-4">Suscríbete a nuestro boletín y entérate a tiempo de las novedades.</p>
+              </div>
+              <form>
+              <div class="w-full flex">
+                  <div class="w-full md:w-1/2 m-4">
+                      <input type="text" class="w-full bg-white rounded-full p-4" placeholder="Nombre"> </input>
+                  </div>
+                  <div class="w-full md:w-1/2 m-4">
+                      <input type="email" class="w-full bg-white rounded-full p-4" placeholder="Email"> </input>
+                  </div>
+              </div>
+              <div class="m-auto w-full max-w-screen-md flex">
+                  <div class="w-full flex justify-center items-center my-2">
+                      <p class="mx-1">Acepto recibir correos de renddy.com</p>
+                      <input type="checkbox" name="condition" class="mx-2">
+                      <a class="underline text-blue-500 font-bold" href="terminos-y-condiciones.html" target="_blank"> términos y condiciones</a>
+                  </div>
+              </div>
+              <button class="bg-green-500 m-auto flex items-center text-white p-4 my-4 "><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="white">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg> INSCRÍBETE</button>
+              </form>
+          </div>
+      </div>
+    
+</section>
+  
 </body>
 <footer class="bg-gray-100" aria-labelledby="footerHeading">
-    <h2 id="footerHeading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 xl:col-span-1">
-          <img class="h-10" src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg" alt="Company name">
-          <p class="text-gray-500 text-base">
-            Préstamos e inversiones personales transparentes.
-          </p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Facebook</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-              </svg>
-            </a>
-  
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Instagram</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-              </svg>
-            </a>
-  
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Twitter</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
-            </a>
-  
+  <h2 id="footerHeading" class="sr-only">Footer</h2>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="space-y-8 xl:col-span-1">
+        <img class="h-10" src="images/icons/renddy.svg" alt="Company name">
+        <p class="text-gray-500 text-base">
+          Préstamos e inversiones personales transparentes.
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
 
-          </div>
-        </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                Quiero un préstamo
-              </h3>
-              <ul class="mt-4 space-y-4">
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Preguntas frecuentes
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Tasas y comisiones
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Préstamos personales
-                  </a>
-                </li>
-                <li>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                      Crear una cuenta
-                    </a>
-                  </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                QUIERO PRESTAR
-              </h3>
-              <ul class="mt-4 space-y-4">
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Preguntas frecuentes
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    ¿Cómo funciona?
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    En qué invertir
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Simulador de inversiones
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                Blog
-              </h3>
-              <ul class="mt-4 space-y-4">
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Estadísticas
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Estadísticas por trimestre
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Contacto
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Estudios
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Trabaja con nosotros
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                Legal
-              </h3>
-              <ul class="mt-4 space-y-4">  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Aviso de privacidad
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                    Términos y condiciones
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+
+
         </div>
       </div>
-      <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2021 MENSUALIDADES SAPI S.A. DE C.V.
-        </p>
+      <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              Quiero un préstamo
+            </h3>
+            <ul class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Preguntas frecuentes
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Tasas y comisiones
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Préstamos personales
+                </a>
+              </li>
+              <li>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                    Crear una cuenta
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              QUIERO PRESTAR
+            </h3>
+            <ul class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Preguntas frecuentes
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  ¿Cómo funciona?
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  En qué invertir
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Simulador de inversiones
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              Blog
+            </h3>
+            <ul class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Estadísticas
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Estadísticas por trimestre
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Contacto
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Estudios
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Trabaja con nosotros
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              Legal
+            </h3>
+            <ul class="mt-4 space-y-4">  
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Aviso de privacidad
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                  Términos y condiciones
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="mt-12 border-t border-gray-200 pt-8">
+      <p class="text-base text-gray-400 xl:text-center">
+        &copy; 2021 MENSUALIDADES SAPI S.A. DE C.V.
+      </p>
+    </div>
+  </div>
   </footer>
 </html>
